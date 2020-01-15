@@ -11,5 +11,7 @@ public class HomeController {
     public String index(Model model) {
 
         model.addAttribute("title", "Java Tutorials");
+
+        return "index";
     }
 }
