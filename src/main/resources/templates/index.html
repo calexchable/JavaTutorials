@@ -5,6 +5,8 @@
     <title>JavaScript Tutorial</title>
 </head>
 <body>
+
+<!--TIMESTAMP-->
 <h2>JavaScript Tutorial</h2>
 
 <h3>Display the Date and Time.</h3>
@@ -15,11 +17,28 @@
 
 <p id="timeStamp"></p>
 
+<!--CHANGE TEXT ON HTML-->
 <h3>Getting the Element By Id.</h3>
 <p id ="replaceText">JavaScript can change HTML content.</p>
 
 <button type="button"
         onclick='document.getElementById("replaceText").innerHTML = "Hello JavaScript! Totally rewrote this line!"'>Click to change text!</button>
+
+<!--LIGHT BULB PICTURE-->
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button type="button"
+        onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Illuminate</button>
+
+<img id="myImage"
+     src="pic_bulboff.gif"
+     style="width:100px">
+
+<button type="button"
+        onclick="document.getElementById('myImage').src='pic_bulboff.gif'">De-luminate</button>
 
 </body>
 </html>
