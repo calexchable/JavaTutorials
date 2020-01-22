@@ -6,12 +6,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping(value = "")
-public class HomeController {
+public class IntroController {
 
-    public String index(Model model) {
+    @RequestMapping(value = "intro")
+    public String intro(Model model) {
 
-        model.addAttribute("title", "Java Tutorials");
+        model.addAttribute("title", "Introduction");
 
-        return "index";
+        return "intro";
     }
 }
