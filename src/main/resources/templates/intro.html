@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Tutorial</title>
+</head>
+<body>
+
+<!--TIMESTAMP-->
+<h2>JavaScript Tutorial</h2>
+
+<h3>Display the Date and Time.</h3>
+<button type="button"
+        onclick="document.getElementById('timeStamp').innerHTML = Date()">
+    Click to display date and time
+</button>
+
+<p id="timeStamp"></p>
+
+<!--CHANGE TEXT ON HTML-->
+<h3>Getting the Element By Id.</h3>
+<p id ="replaceText">JavaScript can change HTML content.</p>
+
+<button type="button"
+        onclick='document.getElementById("replaceText").innerHTML = "Hello JavaScript! Totally rewrote this line!"'>Click to change text!</button>
+
+<!--LIGHT BULB PICTURE-->
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button type="button"
+        onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Illuminate</button>
+
+<img id="myImage"
+     src="pic_bulboff.gif"
+     style="width:100px">
+
+<button type="button"
+        onclick="document.getElementById('myImage').src='pic_bulboff.gif'">De-luminate</button>
+
+<!--CHANGING THE FONTS-->
+
+<h2>I'm going to change style</h2>
+
+<p id="fontSizeEx">JavaScript is changing my styles int he HTML element!</p>
+
+<button type="button"
+        onclick="document.getElementById('fontSizeEx').style.fontSize='40px'">
+    Enlarge!
+</button>
+
+
+<!--HIDE AN ELEMENT-->
+<h2>Hiding HTML elements</h2>
+
+<p id="toHide">This message will disappear!</p>
+
+<button type="button"
+        onclick="document.getElementById('toHide').style.display='none'">
+    Hide the message!
+</button>
+
+<!--SHOW ELEMENT-->
+
+<h2>Show a hidden element</h2>
+<p>Click the button and see the hidden message.</p>
+<p id="hiddenMessage"
+   style="display:none">SHREMLOCK</p>
+
+<button type="button"
+        onclick="document.getElementById('hiddenMessage').style.display='block'">
+    Reveal!
+</button>
+
+</body>
