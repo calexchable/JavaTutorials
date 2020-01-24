@@ -20,6 +20,7 @@
 <h1>JavaScript Tutorial</h1>
 <h2>"Where To"</h2>
 
+<!--Initial change-->
 <h2>JavaScript in Body</h2>
 <p id="first_demo"></p>
 
@@ -27,6 +28,7 @@
     document.getElementById("first_demo").innerHTML = "doing the JavaScript thingy...";
 </script>
 
+<!--JavaScript function in head-->
 <h2>JavaScript in the Head</h2>
 <p id="paraDemo">Blah, Blah, Blah, paragraph.</p>
 
@@ -34,6 +36,21 @@
         onclick="initialFunction()">Try to Change it!
 </button>
 
+<!--JavaScript function in body-->
+<h2>JavaScript in Body</h2>
+
+<p id="bodyFunctionDemo">Paragraph for that will change.</p>
+
+<button type="button"
+        onclick="bodyFunction()">Try to change it
+</button>
+
+<script>
+    function bodyFunction() {
+    document.getElementById("bodyFunctionDemo").innerHTML =
+    "Paragraph is changed... oh dang.";
+    }
+</script>
 
 </body>
 </html>
