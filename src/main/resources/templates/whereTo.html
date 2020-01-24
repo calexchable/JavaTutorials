@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>JavaScript Tutorial</title>
+
+    <script>
+        function initialFunction() {
+        document.getElementById("paraDemo").innerHTML = "Paragraph Changed!";
+        }
+    </script>
+
 </head>
 <body>
 
@@ -19,6 +26,14 @@
 <script>
     document.getElementById("first_demo").innerHTML = "doing the JavaScript thingy...";
 </script>
+
+<h2>JavaScript in the Head</h2>
+<p id="paraDemo">Blah, Blah, Blah, paragraph.</p>
+
+<button type="button"
+        onclick="initialFunction()">Try to Change it!
+</button>
+
 
 </body>
 </html>
