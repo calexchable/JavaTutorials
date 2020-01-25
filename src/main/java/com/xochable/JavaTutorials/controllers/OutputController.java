@@ -6,13 +6,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping(value = "")
-public class WhereToController {
+public class OutputController {
 
-    @RequestMapping(value = "where-to")
-    public String whereTo(Model model) {
+    @RequestMapping(value = "output")
+    public String output(Model model) {
 
-        model.addAttribute("title", "Where To");
+        model.addAttribute("title", "Output");
 
-        return "whereTo";
+        return "output";
+
     }
 }
