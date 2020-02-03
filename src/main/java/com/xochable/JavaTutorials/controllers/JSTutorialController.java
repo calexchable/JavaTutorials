@@ -47,4 +47,12 @@ public class JSTutorialController {
 
         return "syntax";
     }
+
+    @RequestMapping(value = "comments")
+    public String comments(Model model) {
+
+        model.addAttribute("title", "Comments");
+
+        return "comments";
+    }
 }
