@@ -55,4 +55,12 @@ public class JSTutorialController {
 
         return "comments";
     }
+
+    @RequestMapping(value = "variables")
+    public String variables(Model model) {
+
+        model.addAttribute("title", "Variables");
+
+        return "variables";
+    }
 }
