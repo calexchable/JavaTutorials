@@ -59,7 +59,7 @@
 </div>
 
 <div>
-    <h2>JavaSrcipt Variables</h2>
+    <h2>JavaScript Variables</h2>
     <p>Create a variable, assign a value to it, and display it:</p>
 
     <p id="varDemo4"></p>
@@ -70,5 +70,18 @@
     </script>
 </div>
 
+<div>
+    <h3>You can declare many variables in one statement.</h3>
+    <p id="varDemo5"></p>
+    <p id="varDemo5a"></p>
+
+
+    <script>
+        var person = "John Doe", carName = "Volvo", price = 200;
+        document.getElementById("varDemo5").innerHTML = carName;
+        document.getElementById("varDemo5a").innerHTML = "sold to " + person + "for: " + price + " big ones!";
+
+    </script>
+</div>
 </body>
 </html>
