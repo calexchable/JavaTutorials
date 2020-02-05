@@ -98,5 +98,52 @@
     </script>
 </div>
 
+<div>
+    <h3>JavaScript Variable</h3>
+    <p>A variable declared without a value will have the value undefined.</p>
+
+    <p id="demoUndefined"></p>
+
+    <script>
+        var nameOfCar;
+        document.getElementById("demoUndefined").innerHTML = nameOfCar;
+    </script>
+</div>
+
+<div>
+    <h3>If you re-declare a JavaScript variable, it will not lose its value.</h3>
+
+    <p id="demoVariable"></p>
+
+    <script>
+        var nameThisCar = "Volvo named Svedka";
+        var nameThisCar;
+        document.getElementById("demoVariable").innerHTML = nameThisCar;
+    </script>
+</div>
+
+<div>
+    <h3>JavaScript Variable - arithmetic</h3>
+    <p>The result of adding 5 + 2 + 3:</p>
+
+    <p id="demoArith"></p>
+
+    <script>
+        var x = 5 + 2 + 3;
+        document.getElementById("demoArith").innerHTML = x;
+    </script>
+</div>
+
+<div>
+    <h3>The result of adding "John" + " " + "Doe":</h3>
+
+    <p id="concatDemo"></p>
+
+    <script>
+        var nameJoin = "John" + " " + "Doe";
+        document.getElementById("concatDemo").innerHTML = nameJoin;
+    </script>
+</div>
+
 </body>
 </html>
