@@ -63,4 +63,12 @@ public class JSTutorialController {
 
         return "variables";
     }
+
+    @RequestMapping(value = "operators")
+    public String operators(Model model) {
+
+        model.addAttribute("title", "Operators");
+
+        return "operators";
+    }
 }
