@@ -71,4 +71,12 @@ public class JSTutorialController {
 
         return "operators";
     }
+
+    @RequestMapping(value = "arithmetic")
+    public String arithmetic(Model model) {
+
+        model.addAttribute("title", "Arithmetic");
+
+        return "arithmetic";
+    }
 }
