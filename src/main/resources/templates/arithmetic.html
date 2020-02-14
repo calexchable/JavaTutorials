@@ -122,12 +122,17 @@
 
     <p>Multiplication has precedence over additon.</p>
     <p id="pemdasDemo1"></p>
+
     <p>But Parenthesis has precedence over multiplication.</p>
     <p id="pemdasDemo2"></p>
+
+    <p>When many operations have the same precedence, they are computed from left to right.</p>
+    <p id="pemdasDemo3"></p>
 
     <script>
         document.getElementById("pemdasDemo1").innerHTML = 100 + 50 * 3;
         document.getElementById("pemdasDemo2").innerHTML = (100 + 50) * 3;
+        document.getElementById("pemdasDemo3").innerHTML = 100 + 50 - 3;
     </script>
 </div>
 
