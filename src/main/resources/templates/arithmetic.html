@@ -51,6 +51,7 @@
 </div>
 
 <div>
+    <h2>Operators</h2>
     <h3>The + Operator</h3>
     <p id="arithDemo4"></p>
 
@@ -63,19 +64,34 @@
     <h3>The / Operator</h3>
     <p id="arithDemo7"></p>
 
+    <h3>The % Operator</h3>
+    <p id="arithDemo8"></p>
+
+    <h3>Incrementation ++ Operator</h3>
+    <p id="arithDemo9"></p>
+
     <script>
         var five = 5;
         var two = 2;
+
         var plus = five + two;
         var minus = five - two;
         var multiply = five * two;
         var divide = five / two;
+        var modulo = five % two;
+        five++;
+        var increment = five;
+
         document.getElementById("arithDemo4").innerHTML = plus;
         document.getElementById("arithDemo5").innerHTML = minus;
         document.getElementById("arithDemo6").innerHTML = multiply;
         document.getElementById("arithDemo7").innerHTML = divide;
+        document.getElementById("arithDemo8").innerHTML = modulo;
+        document.getElementById("arithDemo9").innerHTML = increment;
     </script>
 </div>
+
+
 
 </body>
 </html>
