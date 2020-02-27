@@ -87,4 +87,12 @@ public class JSTutorialController {
 
         return "assignment";
     }
+
+    @RequestMapping(value = "datatypes")
+    public String dataTypes(Model model) {
+
+        model.addAttribute("title", "Data Types");
+
+        return "dataTypes";
+    }
 }
