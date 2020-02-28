@@ -31,5 +31,18 @@
     </script>
 </div>
 
+<div>
+    <p>JavaScript evaluates expressions from left to right. Different sequences can produce different results:</p>
+    <p id="volvoDemo3"></p>
+    <p id="volvoDemo4"></p>
+
+    <script>
+        var x = 16 + 4 + "Volvo";
+        var y = "Volvo" + 16 + 4;
+        document.getElementById("volvoDemo3").innerHTML = x;
+        document.getElementById("volvoDemo4").innerHTML = y;
+    </script>
+</div>
+
 </body>
 </html>
