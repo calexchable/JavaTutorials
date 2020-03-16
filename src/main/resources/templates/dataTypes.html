@@ -188,13 +188,23 @@
 <div>
     <h3>JavaScript</h3>
 
-    <p>The value (and the data type of a variable with no value is <b>undefined</b></p>
+    <p>The value (and the data type of a variable with no value is <b>undefined</b>.</p>
     <p id="undefDemo"></p>
+
+    <p>Variables can be emptied if you set the value to <b>undefined</b>.</p>
+    <p id="undefDemo2"></p>
 
     <script>
         var car;
+        var carTwo = "Volvo";
+        carTwo = undefined;
+
         document.getElementById("undefDemo").innerHTML =
         car + "<br>" + typeof car;
+
+        document.getElementById("undefDemo2").innerHTML =
+        carTwo + "<br>" + typeof carTwo;
+
     </script>
 </div>
 
