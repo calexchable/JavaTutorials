@@ -223,5 +223,34 @@
     </script>
 </div>
 
+<div>
+    <h3>JavaScript Null Objects</h3>
+
+    <p>Objects can be emptied by setting hte value to
+    <b>null</b>.</p>
+
+    <p id="nullDemo"></p>
+
+    <script>
+        var personNull = {firstName:"John", lastName: "Doe", age:50, eyeColor: "blue};
+        personNull = undefined;
+        document.getElementById("nullDemo").innerHTML = typeof personNull;
+    </script>
+</div>
+
+<div>
+    <p>Undefined and null are equal in value but different in type:</p>
+    <p id="diffNullUndef"></p>
+
+    <script>
+        document.getElementById("diffNullUndef").innerHTML =
+        typeof undefined + "<br>" +
+        typeof null + "<br><br>" +
+
+        (null === undefined) + "<br>" +
+        (null == undefined);
+    </script>
+</div>
+
 </body>
 </html>
