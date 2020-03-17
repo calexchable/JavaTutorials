@@ -269,5 +269,22 @@
 
 </div>
 
+<div>
+    <h3>JavaScript typeof -- Complex Data</h3>
+    <p>The typeof operator returns object for both objects, arrays, and null.</p>
+
+    <p>The typeof operator does not return object for functions.</p>
+
+    <p id="typeofFuncDemo"></p>
+
+    <script>
+        document.getElementById("typeofFuncDemo").innerHTML =
+        typeof {name: "john", age: 34} + "<br>" +
+        typeof [1, 2, 3, 4]  + "<br>" +
+        typeof null + "<br>" +
+        typeof function myFunc(){};
+    </script>
+</div>
+
 </body>
 </html>
