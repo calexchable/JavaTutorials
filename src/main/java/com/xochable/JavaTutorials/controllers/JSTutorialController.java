@@ -95,4 +95,11 @@ public class JSTutorialController {
 
         return "dataTypes";
     }
+
+    @RequestMapping(value = "functions")
+    public String functions(Model model) {
+        model.addAttribute("title", "Funct0ions");
+
+        return "functions";
+    }
 }
