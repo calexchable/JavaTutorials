@@ -42,7 +42,7 @@
 </div>
 
 <div>
-    <p>This example calls a funtion to convert from Fahrenheit to Celsius:</p>
+    <p>This example calls a function to convert from Fahrenheit to Celsius:</p>
     <p id="f2cDemo"></p>
 
     <script>
@@ -62,6 +62,20 @@
             return (5/9) * (f-32);
         }
         document.getElementById("Demo2").innerHTML = toCelsius;
+    </script>
+</div>
+
+<div>
+    <p>Another example, Function used as Variable Values</p>
+    <p id="demo3"></p>
+
+    <script>
+        document.getElementById("demo3").innerHTML =
+        "The temp is " + toCelsius(77) + " C.";
+
+        function toCelsius(fahrenheit) {
+            return (5/9) * (fahrenheit - 32);
+        }
     </script>
 </div>
 
