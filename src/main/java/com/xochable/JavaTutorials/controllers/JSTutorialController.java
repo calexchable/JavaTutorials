@@ -98,8 +98,15 @@ public class JSTutorialController {
 
     @RequestMapping(value = "functions")
     public String functions(Model model) {
-        model.addAttribute("title", "Funct0ions");
+        model.addAttribute("title", "Functions");
 
         return "functions";
+    }
+
+    @RequestMapping(value = "objects")
+    public String objects(Model model) {
+        model.addAttribute("title", "Objects");
+
+        return "objects";
     }
 }
