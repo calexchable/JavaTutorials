@@ -38,5 +38,50 @@
     </script>
 </div>
 
+<div>
+    <h3>JavaScript Objects</h3>
+    <p id="demo3"></p>
+
+    <script>
+        // Create an object;
+        var person = {
+        firstName:  "John",
+        lastName: "Doe",
+        age: 50,
+        eyeColor: "blue"
+        };
+
+        // Display some data from the object:
+        document.getElementById("demo3").innerHTML =
+        person.firstName + " is " + person.age + " years old.";
+    </script>
+</div>
+
+<div>
+    <h3>JavaScript Objects</h3>
+    <p>There are two ways to access an object property.</p>
+
+    <p>You can use person.property or person["property"].</p>
+
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+
+    <script>
+        // Create an object:
+        var person = {
+        firstName: "John",
+        lastName: "Doe"
+        };
+
+        // Display some data from the object:
+        document.getElementById("demo4").innerHTML =
+        person.firstName + " " + person.lastName;
+
+        // Alternate method:
+        document.getElementById("demo5").innerHTML =
+        person["firstName"] + " " + person["lastName"];
+    </script>
+</div>
+
 </body>
 </html>
