@@ -79,5 +79,27 @@
     </script>
 </div>
 
+<div>
+    <h3>JavaScript Functions</h3>
+
+    <p>Outside myFunction() carName is undefined.</p>
+
+    <p id="nameDemo1"></p>
+    <p id="nameDemo2"></p>
+
+    <script>
+        myFunction();
+
+        function myFunction() {
+        var carName = "Volvo";
+        document.getElementById("nameDemo1").innerHTML =
+        typeof carName + " - " + carName;
+        }
+
+        document.getElementById("nameDemo2").innerHTML =
+        typeof carName;
+    </script>
+</div>
+
 </body>
 </html>
