@@ -85,6 +85,30 @@
 
 <div>
     <h3>Accessing Object Methods</h3>
+
+    <p>An object method is a function definition, stored as a property value.</p>
+
+    <p id="demoThis"></p>
+
+    <script>
+        // Create an object:
+        var person = {
+        firstName: "John",
+        lastName: "Doe",
+        id: 5566,
+        fullName: function() {
+        return this.firstName + " " + this.lastName;
+        }
+        };
+
+        // Display data from the object:
+        document.getElementById("demoThis").innerHTML =
+        person.fullName();
+    </script>
+</div>
+
+<div>
+    
 </div>
 
 </body>
