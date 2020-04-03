@@ -108,7 +108,27 @@
 </div>
 
 <div>
-    
+    <h3>Accessing Object Methods</h3>
+
+    <p>If you access an object method without (), it will return the function definition:</p>
+
+    <p id="demoThisNoPara"></p>
+
+    <script>
+        // Create an object:
+        var person = {
+        firstName: "John",
+        lastName: "Doe",
+
+        fullName: function() {
+        return this.firstName + " " + this.lastName;
+        }
+        };
+
+        // Display data
+        document.getElementById("demoThisNoPara").innerHTML =
+        person.fullName;
+    </script>
 </div>
 
 </body>
