@@ -109,4 +109,11 @@ public class JSTutorialController {
 
         return "objects";
     }
+
+    @RequestMapping(value = "events")
+    public String events(Model model) {
+        model.addAttribute("title", "Events");
+
+        return "events";
+    }
 }
