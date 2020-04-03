@@ -32,5 +32,22 @@
     </button>
 </div>
 
+<div>
+    <h3>Time button - calling functions.</h3>
+
+    <p>Click the button to display the date.</p>
+
+    <button onclick="displayDate()">What Time is it?</button>
+
+    <script>
+        function displayDate() {
+        document.getElementById("demoTimeThree").innerHTML = Date();
+        }
+    </script>
+
+    <p id="demoTimeThree"></p>
+
+</div>
+
 </body>
 </html>
