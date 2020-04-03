@@ -9,11 +9,59 @@
     <div><a href="/">Return to Index</a></div>
 </form>
 
-<h1>JavaScript Events Tutorials</h1>
+<h1>JavaScript Strings Tutorials</h1>
 
 <p>from w3schools.com</p>
 
+<div>
+    <h3>JavaScript Strings</h3>
 
+    <p id="stringsDemo"></p>
+
+    <script>
+        var x = "John Doe";
+        // Strings written inside of quotes
+
+        document.getElementById("stringsDemo").innerHTML = x;
+    </script>
+</div>
+
+<div>
+    <h3>JavaScript Strings</h3>
+
+    <p>Strings are written inside quotes. You can use single or double quotes:</p>
+
+    <p id="demoQuotes"></p>
+
+    <script>
+
+        var carName1 = "Volvo XC60"; // Double quotes
+        var carName2 = 'Volvo XC60'; // Single quotes
+
+        document.getElementById("demoQuotes").innerHTML =
+        carName1 + " / " + carName2;
+    </script>
+</div>
+
+<div>
+    <h3>JavaScript String</h3>
+
+    <p>You can use quotes inside a string, as long as they
+    don't match the quotes surrounding the string.</p>
+
+    <p id="quotesDemo"></p>
+
+    <script>
+        var answer1 = "It's alright";
+        var answer2 = "He is called 'Johnny'";
+        var answer3 = 'He is called "Johnny"';
+
+        document.getElementById("quotesDemo").innerHTML =
+        answer1 + "<br>" +
+        answer2 + "<br>" +
+        answer3;
+    </script>
+</div>
 
 </body>
 </html>
