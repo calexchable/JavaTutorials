@@ -101,17 +101,47 @@
 
 <div>
     <h3>JavaScript Statements</h3>
+
     <p>
         The best place to break a code line is after an operator or a comma.
     </p>
-
     <p id="breakDemo"></p>
+
+    <p>
+        You can break a code line within a text string with a backslash.
+    </p>
+    <p id="breakDemo2"></p>
+    <p>
+        However, this is not the preferred Method.
+        It is safer to break a code line in a string by using
+        string addition.
+    </p>
+    <p id="breakDemo3"></p>
+
+    <p>
+        You cannot break code lines with a \ backslash.
+    </p>
+    <p id="breakDemo4"></p>
 
     <script>
         document.getElementById("breakDemo").innerHTML =
         "Hello Dolly!";
+
+        document.getElementById("breakDemo2").innerHTML =
+        "Hello \
+        Dolly!";
+
+        document.getElementById("breakDemo3").innerHTML =
+        "Hello " +
+        "Dolly!";
+
+<!--        The code breaks the rest of the sequence... because of the backslash-->
+<!--        document.getElementById("breakDemo4").innerHTML = \-->
+<!--        "Hello Dolly.";-->
     </script>
 </div>
+
+
 
 </body>
 </html>
