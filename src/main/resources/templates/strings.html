@@ -85,12 +85,17 @@
     <p>escape sequence\' inserts single quote.</p>
     <p id="escapeDemo2"></p>
 
+    <p>escape sequence \\ inserts a backslash into a string.</p>
+    <p id="escapeDemo3"></p>
     <script>
-        var x = "     We are the so-called \"Vikings\" from the north.";
+        var x = "--We are the so-called \"Vikings\" from the north.";
         document.getElementById("escapeDemo").innerHTML = x;
 
-        var y = '     It\'s alright.';
+        var y = '--It\'s alright.';
         document.getElementById("escapeDemo2").innerHTML = y;
+
+        var z = "--The character \\ is called backslash.";
+        document.getElementById("escapeDemo3").innerHTML = z;
     </script>
 </div>
 
