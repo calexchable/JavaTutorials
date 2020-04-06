@@ -165,15 +165,29 @@
     <p id="stringObjectDemo"></p>
     <p id="stringObjectDemo2"></p>
 
+    <p>
+        Even worse, objects cannot be compared.
+    </p>
+    <p id="stringObjectDemo3"></p>
+    <p id="stringObjectDemo4"></p>
+
+
     <script>
         var x = "John";
         var y = new String("John");
+        var z = new String("John");
 
         document.getElementById("stringObjectDemo").innerHTML =
         (x==y);
 
         document.getElementById("stringObjectDemo2").innerHTML =
         (x===y);
+
+        document.getElementById("stringObjectDemo3").innerHTML =
+        (y==z);
+
+        document.getElementById("stringObjectDemo4").innerHTML =
+        (y===z);
 
     </script>
 </div>
