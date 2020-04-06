@@ -156,5 +156,27 @@
     </script>
 </div>
 
+<div>
+    <h3>Never Create Strings as objects.</h3>
+    <p>
+        Strings and objects cannot safely be compared.
+    </p>
+
+    <p id="stringObjectDemo"></p>
+    <p id="stringObjectDemo2"></p>
+
+    <script>
+        var x = "John";
+        var y = new String("John");
+
+        document.getElementById("stringObjectDemo").innerHTML =
+        (x==y);
+
+        document.getElementById("stringObjectDemo2").innerHTML =
+        (x===y);
+
+    </script>
+</div>
+
 </body>
 </html>
