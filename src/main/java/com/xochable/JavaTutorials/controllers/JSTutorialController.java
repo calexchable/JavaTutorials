@@ -123,4 +123,11 @@ public class JSTutorialController {
 
         return "strings";
     }
+
+    @RequestMapping(value = "stringMethods")
+    public String stringMethods(Model model) {
+        model.addAttribute("title", "String Methods");
+
+        return "stringMethods";
+    }
 }
