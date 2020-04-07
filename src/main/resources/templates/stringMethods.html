@@ -73,5 +73,21 @@
     </script>
 </div>
 
+<div>
+    <h3>JavaScript String Methods</h3>
+
+    <p>The indexOf() method accepts a second parameter
+    as the starting position for the search:</p>
+
+    <p id="secPosDemo"></p>
+
+    <script>
+        var str = "Please locate where 'locate' occurs!";
+        var secPos = str.indexOf("locate", 15);
+        document.getElementById("secPosDemo").innerHTML =
+        secPos;
+    </script>
+</div>
+
 </body>
 </html>
