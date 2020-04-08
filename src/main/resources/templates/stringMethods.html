@@ -213,15 +213,23 @@
     until the end of the string.</p>
     <p id = "substrDemo2"></p>
 
+    <p>Negative parameter the position counts from the end of the string.</p>
+    <p id="negSubstr"></p>
+
     <script>
         var substrRes = fruitStr.substr(7,6);
         var substr2 = fruitStr.substr(7);
+        var negSubstrDemo = fruitStr.substr(-4);
 
         document.getElementById("substrDemo").innerHTML =
         substrRes;
 
         document.getElementById("substrDemo2").innerHTML =
         substr2;
+
+        document.getElementById("negSubstr").innerHTML =
+        negSubstrDemo;
+
     </script>
 </div>
 
