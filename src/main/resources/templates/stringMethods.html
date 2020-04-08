@@ -159,5 +159,28 @@
     </script>
 </div>
 
+<div>
+    <h3>Slice Method with one parameter</h3>
+
+    <p>With one parameter, the slice() method starts at the
+    noted position until the end of the string. If parameter
+    is negative it counts form the end of the string (but
+    still returns from that positon to the end of the string.</p>
+
+    <p id="oneParaSlice"></p>
+    <p id="negOneParaSlice"></p>
+
+    <script>
+        var onePara = fruitStr.slice(7);
+        var negOnePara = fruitStr.slice(-12);
+
+        document.getElementById("oneParaSlice").innerHTML =
+        onePara;
+
+        document.getElementById("negOneParaSlice").innerHTML =
+        negOnePara;
+    </script>
+</div>
+
 </body>
 </html>
