@@ -191,7 +191,6 @@
 
     <p id="subStringDemo"></p>
     <p id="subDemo2"></p>
-    <p id="subDemo3"></p>
 
     <script>
         var resSub = fruitStr.substring(7, 13);
@@ -200,6 +199,20 @@
         document.getElementById("subStringDemo").innerHTML = resSub;
         document.getElementById("subDemo2").innerHTML =
         resSubDemo2;
+    </script>
+</div>
+
+<div>
+    <h3>substr() method</h3>
+    <p>Similar to slice, but second parameter is length of
+    extracted part.</p>
+
+    <p id="substrDemo"></p>
+
+    <script>
+        var substrRes = fruitStr.substr(7,6);
+        document.getElementById("substrDemo").innerHTML =
+        substrRes;
     </script>
 </div>
 
