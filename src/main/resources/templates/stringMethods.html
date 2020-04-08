@@ -185,15 +185,21 @@
 <div>
     <h3>Substring Method</h3>
 
-    <p>The substr() method extracts a part of a string
+    <p>The substring() method extracts a part of a string
     and returns the extracted parts in a new string. Similar
-    to slice, it, however, cannot accept negative values.</p>
+    to slice, it, however, cannot accept negative indexes.</p>
 
     <p id="subStringDemo"></p>
+    <p id="subDemo2"></p>
+    <p id="subDemo3"></p>
 
     <script>
         var resSub = fruitStr.substring(7, 13);
+        var resSubDemo2 = fruitStr.substring(7);
+
         document.getElementById("subStringDemo").innerHTML = resSub;
+        document.getElementById("subDemo2").innerHTML =
+        resSubDemo2;
     </script>
 </div>
 
