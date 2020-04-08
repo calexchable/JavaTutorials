@@ -145,5 +145,19 @@
     </script>
 </div>
 
+<div>
+    <p>The slice() method, if negative parameters are used
+    it counts from the end of the string.</p>
+
+    <p id="negativeSlice"></p>
+
+    <script>
+        var negativeRes = fruitStr.slice(-12, -6);
+        document.getElementById("negativeSlice").innerHTML =
+        negativeRes;
+
+    </script>
+</div>
+
 </body>
 </html>
