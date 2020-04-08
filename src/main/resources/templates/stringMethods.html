@@ -209,10 +209,19 @@
 
     <p id="substrDemo"></p>
 
+    <p>If you delete the second parameter, it returns
+    until the end of the string.</p>
+    <p id = "substrDemo2"></p>
+
     <script>
         var substrRes = fruitStr.substr(7,6);
+        var substr2 = fruitStr.substr(7);
+
         document.getElementById("substrDemo").innerHTML =
         substrRes;
+
+        document.getElementById("substrDemo2").innerHTML =
+        substr2;
     </script>
 </div>
 
