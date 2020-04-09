@@ -249,6 +249,8 @@
 
     <p id="oneChange">Try visiting Microsoft and Microsoft.</p>
 
+    <p>The replace() method is case sensitive, so be careful.</p>
+
     <script>
         function changeFunction() {
             var str = document.getElementById("changeDemo").innerHTML;
@@ -261,6 +263,24 @@
             txt;
             document.getElementById("oneChange").innerHTML =
             txt2;
+        }
+    </script>
+</div>
+
+<div>
+    <h3>Replace method - case insensitive.</h3>
+
+    <p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+    <button onclick="changer()">Try it</button>
+
+    <p id="insensitiveDemo">Please visit Microsoft!</p>
+
+    <script>
+        function changer() {
+            var str = document.getElementById("insensitiveDemo").innerHTML;
+            var txt = str.replace(/MICROSOFT/i, "W3Schools");
+            document.getElementById("insensitiveDemo").innerHTML = txt;
         }
     </script>
 </div>
