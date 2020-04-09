@@ -243,12 +243,24 @@
 
     <p id="changeDemo">Please visit Microsoft!</p>
 
+    <p>Replace only works on first instance.</p>
+
+    <button onclick="changeFunction()">Try Changing this Business!</button>
+
+    <p id="oneChange">Try visiting Microsoft and Microsoft.</p>
+
     <script>
         function changeFunction() {
             var str = document.getElementById("changeDemo").innerHTML;
+            var str2 = document.getElementById("oneChange").innerHTML;
+
             var txt = str.replace("Microsoft", "W3Schools");
+            var txt2 = str2.replace("Microsoft", "W3Schools");
+
             document.getElementById("changeDemo").innerHTML =
             txt;
+            document.getElementById("oneChange").innerHTML =
+            txt2;
         }
     </script>
 </div>
