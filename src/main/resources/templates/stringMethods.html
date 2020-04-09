@@ -285,5 +285,24 @@
     </script>
 </div>
 
+<div>
+    <p>New lets replace all the Microsofts in the paragraph
+    below iwth the //g or global function.</p>
+
+    <button onclick="allReplace()">Replace them ALL!!!</button>
+
+    <p id="relaceAll">Visit Microsoft and Microsoft!</p>
+
+    <script>
+        function allReplace() {
+            var string = document.getElementById("relaceAll").innerHTML;
+            var text = string.replace(/Microsoft/g, "W3Schools");
+
+            document.getElementById("relaceAll").innerHTML =
+            text;
+        }
+    </script>
+</div>
+
 </body>
 </html>
