@@ -233,5 +233,25 @@
     </script>
 </div>
 
+<div>
+    <h3>Replacing String Content</h3>
+
+    <p>Replace "Microsoft" with "W3Schools" in the
+    paragraph below:</p>
+
+    <button onclick="changeFunction()">Change that Business!</button>
+
+    <p id="changeDemo">Please visit Microsoft!</p>
+
+    <script>
+        function changeFunction() {
+            var str = document.getElementById("changeDemo").innerHTML;
+            var txt = str.replace("Microsoft", "W3Schools");
+            document.getElementById("changeDemo").innerHTML =
+            txt;
+        }
+    </script>
+</div>
+
 </body>
 </html>
