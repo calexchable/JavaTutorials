@@ -304,5 +304,22 @@
     </script>
 </div>
 
+<div>
+    <h3>Converting to Upper and Lower Case!</h3>
+
+    <p>Convert a string to Upper case:</p>
+
+    <button onclick="upCase()">Upper it!</button>
+    <p id="engDemo">Hello World!</p>
+
+    <script>
+        function upCase() {
+        var helloText = document.getElementById("engDemo").innerHTML;
+        document.getElementById("engDemo").innerHTML =
+        helloText.toUpperCase();
+        }
+    </script>
+</div>
+
 </body>
 </html>
