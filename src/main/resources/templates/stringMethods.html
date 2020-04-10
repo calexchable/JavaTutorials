@@ -312,11 +312,21 @@
     <button onclick="upCase()">Upper it!</button>
     <p id="engDemo">Hello World!</p>
 
+    <p>Now covert the string to lower case:</p>
+    <button onclick="lowCase()">Lower it!</button>
+    <p id="espDemo">Hola Mundo!</p>
+
     <script>
         function upCase() {
-        var helloText = document.getElementById("engDemo").innerHTML;
-        document.getElementById("engDemo").innerHTML =
+            var helloText = document.getElementById("engDemo").innerHTML;
+            document.getElementById("engDemo").innerHTML =
         helloText.toUpperCase();
+        }
+
+        function lowCase() {
+            var holaText = document.getElementById("espDemo").innerHTML;
+            document.getElementById("espDemo").innerHTML =
+            holaText.toLowerCase();
         }
     </script>
 </div>
