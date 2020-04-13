@@ -331,5 +331,39 @@
     </script>
 </div>
 
+<div>
+    <h3>The concat() Method</h3>
+
+    <p>The concat() method joins two or more strings:</p>
+
+    <p id="concatDemo"></p>
+
+    <script>
+        var text1 = "Hello";
+        var text2 = "World";
+        var text3 = text1.concat(" ", text2);
+
+        document.getElementById("concatDemo").innerHTML = text3;
+    </script>
+</div>
+
+<div>
+    <h3>The String.trim() Method</h3>
+
+    <p>Click the Button to alert the string with removed whitespace.</p>
+
+    <button onclick="trimFunction()">Trim this business!</button>
+
+    <p><strong>Note:</strong> The trim() method is not
+    supported in Internet Explorer 8 and earlier versions.</p>
+
+    <script>
+        function trimFunction() {
+            var strTrim = "          Hello World!        ";
+            alert(strTrim.trim());
+        }
+    </script>
+</div>
+
 </body>
 </html>
