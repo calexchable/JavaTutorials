@@ -365,5 +365,28 @@
     </script>
 </div>
 
+<div>
+    <h2>JavaScript String Methods</h2>
+
+    <p>The charAt() method returns the character at a given position in a string:</p>
+
+    <p id="charAtDemo"></p>
+
+    <p>The charCodeAt() method returns the unicode of the character
+    at a given position in a string:</p>
+
+    <p id="charCodeDemo"></p>
+
+    <script>
+        var charString = "HELLO WORLD";
+
+        document.getElementById("charAtDemo").innerHTML =
+        charString.charAt(0);
+
+        document.getElementById("charCodeDemo").innerHTML =
+        charString.charCodeAt(0);
+    </script>
+</div>
+
 </body>
 </html>
