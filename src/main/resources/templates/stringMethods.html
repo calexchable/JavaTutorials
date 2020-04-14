@@ -390,12 +390,19 @@
 
 <div>
     <h3>JavaScript String Methods - property access</h3>
+
     <p>ECMAScript 5 allows property access on strings:</p>
 
     <p id = "propAccessDemo"></p>
 
+    <p>ECMAScript 5 allows property access on strings, but read only:</p>
+
+    <p id = "propAccessDemo2"></p>
+
     <script>
-        document.getElementById("propAccessDemo").innerHTML =
+        charString[0] = "A"; // Does not work
+
+        document.getElementById("propAccessDemo2").innerHTML =
         charString[0];
     </script>
 </div>
