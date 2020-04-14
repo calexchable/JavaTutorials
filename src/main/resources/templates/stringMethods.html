@@ -425,5 +425,23 @@
     </script>
 </div>
 
+<div>
+    <h3>String to array</h3>
+    <p id="arrayDemo"></p>
+
+    <script>
+        var str02 = "Hello";
+        var arr02 = str02.split("");
+        var text02 = "";
+        var i;
+
+        for (i = 0; i < arr02.length; i++) {
+            text02 += arr02[i] + "<br>"
+        }
+
+        document.getElementById("arrayDemo").innerHTML = text02;
+    </script>
+</div>
+
 </body>
 </html>
