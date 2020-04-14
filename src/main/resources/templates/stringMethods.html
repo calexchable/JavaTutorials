@@ -407,5 +407,23 @@
     </script>
 </div>
 
+<div>
+    <h3>Convert Strings into Arrays</h3>
+    <p>Click "Try It" to display the first array element, after a
+    string split.</p>
+
+    <button onclick = "arrayConvert()">Try It</button>
+
+    <p id="arrayConvertDemo"></p>
+
+    <script>
+        function arrayConvert() {
+            var str01 = "a,b,c,d,e,f";
+            var arr01 = str01.split(",");
+            document.getElementById("arrayConvertDemo").innerHTML = arr01[0];
+        }
+    </script>
+</div>
+
 </body>
 </html>
