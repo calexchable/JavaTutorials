@@ -135,6 +135,6 @@ public class JSTutorialController {
     public String numbers(Model model) {
         model.addAttribute("title", "Numbers");
 
-        return "numbers";
+        return "number";
     }
 }
