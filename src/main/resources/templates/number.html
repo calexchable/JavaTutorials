@@ -20,11 +20,21 @@
 
     <p id="numDemo1"></p>
 
+    <p>Extra Large Numbers or extra small ones can be written with scientific
+        (exponential) notation:</p>
+
+    <p id="numDemo2"></p>
     <script>
         var x = 3.14;
         var y = 3;
 
-        document.getElementById("numDemo1").innerHTML = x + "<br>" + y;
+        var x2 = 123e5;
+        var y2 = 123e-5;
+
+        document.getElementById("numDemo1").innerHTML =
+            x + "<br>" + y;
+        document.getElementById("numDemo2").innerHTML =
+            x2 + "<br>" + y2;
     </script>
 </div>
 
