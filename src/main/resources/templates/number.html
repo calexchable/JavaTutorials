@@ -83,6 +83,9 @@
     concatenated string:</p>
     <p id = "stringDemo"></p>
 
+    <p>If you add string and number, the result is concatenated string:</p>
+    <p id = "strNumDemo"></p>
+
 
     <script>
         var addX = 10;
@@ -93,8 +96,13 @@
         var stringY = "20";
         var stringZ = stringX + stringY;
 
+        var strNumZ = addX + stringY;
+
+
         document.getElementById("addDemo").innerHTML = addZ;
         document.getElementById("stringDemo").innerHTML = stringZ;
+        document.getElementById("strNumDemo").innerHTML = strNumZ;
+
     </script>
 </div>
 
