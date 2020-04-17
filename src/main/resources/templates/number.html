@@ -141,16 +141,22 @@
     <p id="multiDemo"></p>
     <p id="subDemo"></p>
 
+    <p>JavaScript will NOT convert strings to numbers when adding:</p>
+
+    <p id="addDemo2"></p>
+
     <script>
         var X = "100";
         var Y = "10";
         var Z = X / Y;
         var multZ = X * Y;
         var subZ = X - Y;
+        var addZ = X + Y;
 
         document.getElementById("divDemo").innerHTML = Z;
         document.getElementById("multiDemo").innerHTML = multZ;
         document.getElementById("subDemo").innerHTML = subZ;
+        document.getElementById("addDemo2").innerHTML = addZ;
     </script>
 </div>
 
