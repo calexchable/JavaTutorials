@@ -224,9 +224,15 @@
 
     <p id="infiDemo1"></p>
 
+    <p>Division by zero generates Infinity:</p>
+    <p id="infiDemo2"></p>
+
     <script>
         var myNumber = 2;
         var txt = "";
+
+        var inX = 2/0;
+        var inY = -2/0;
 
         while (myNumber != Infinity) {
             myNumber = myNumber * myNumber;
@@ -234,6 +240,8 @@
         }
 
         document.getElementById("infiDemo1").innerHTML = txt;
+        document.getElementById("infiDemo2").innerHTML =
+            inX + "<br>" + inY;
     </script>
 </div>
 
