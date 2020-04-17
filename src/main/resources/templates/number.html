@@ -191,5 +191,26 @@
     </script>
 </div>
 
+<div>
+    <p>If you use NaN in a mathematical operation, the result
+    will also be NaN:</p>
+
+    <p id="NaNDemo4"></p>
+
+    <p>The result can be a concatenation:</p>
+
+    <p id="NaNDemo5"></p>
+
+    <script>
+        var Ex = NaN;
+        var Igriega = 5;
+        var Igriega2 = "5";
+
+        document.getElementById("NaNDemo4").innerHTML = Ex + Igriega;
+        document.getElementById("NaNDemo5").innerHTML = Ex + Igriega2;
+    </script>
+
+</div>
+
 </body>
 </html>
