@@ -106,5 +106,30 @@
     </script>
 </div>
 
+<div>
+    <h3>Some Common Mistakes with adding numbers and strings.</h3>
+    <p>A common mistake is to expect this result to be 30:</p>
+
+    <p id="mistakeNum"></p>
+
+    <p>You might expect the result to be: 102030.</p>
+
+    <p id="misNum"></p>
+
+    <script>
+        var misX = 10;
+        var misY = 20;
+        var misZ = "30";
+
+        var result = misX + misY + misZ;
+
+        document.getElementById("mistakeNum").innerHTML =
+            "The result is: " + misX + misY;
+        document.getElementById("misNum").innerHTML =
+            result;
+
+    </script>
+</div>
+
 </body>
 </html>
