@@ -167,8 +167,27 @@
 
     <p id = "NaNDemo"></p>
 
+    <p>A number divided by a numeric string become a number:</p>
+    <p id = "NaNDemo2"></p>
+
     <script>
         document.getElementById("NaNDemo").innerHTML = 100 / "Apple";
+        document.getElementById("NaNDemo2").innerHTML = 100 / "10";
+    </script>
+</div>
+
+<div>
+    <h3>JavaScript Numbers</h3>
+
+    <p>You can use the global JavaScript function isNaN() to find
+    out if a value is a number:</p>
+
+    <p id="NaNDemo3"></p>
+
+    <script>
+        var NaNX = 100 / "Apple";
+
+        document.getElementById("NaNDemo3").innerHTML = isNaN(NaNX);
     </script>
 </div>
 
