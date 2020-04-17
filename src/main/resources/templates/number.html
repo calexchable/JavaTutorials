@@ -135,17 +135,21 @@
 
 <div>
     <h3>JavaScript Numbers</h3>
-    <p>JavaScript will try to convert strings to numbers when
-    dividing:</p>
+    <p>JavaScript will try to convert strings to numbers:</p>
 
     <p id="divDemo"></p>
+    <p id="multiDemo"></p>
+    <p id="subDemo"></p>
 
     <script>
         var X = "100";
         var Y = "10";
         var Z = X / Y;
+        var multZ = X * Y;
+        var subZ = X - Y;
 
         document.getElementById("divDemo").innerHTML = Z;
+        document.getElementById("multiDemo").innerHTML = multZ;
     </script>
 </div>
 
