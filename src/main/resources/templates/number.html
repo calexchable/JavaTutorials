@@ -218,6 +218,23 @@
 
 <div>
     <h3>Infinity</h3>
+
+    <p>Infinity is returned if you calculate a number outside
+    the largest possible number:</p>
+
+    <p id="infiDemo1"></p>
+
+    <script>
+        var myNumber = 2;
+        var txt = "";
+
+        while (myNumber != Infinity) {
+            myNumber = myNumber * myNumber;
+            txt = txt + myNumber + "<br>";
+        }
+
+        document.getElementById("infiDemo1").innerHTML = txt;
+    </script>
 </div>
 
 </body>
