@@ -116,6 +116,8 @@
 
     <p id="misNum"></p>
 
+    <p>The equations read left to right.</p>
+
     <script>
         var misX = 10;
         var misY = 20;
@@ -128,6 +130,22 @@
         document.getElementById("misNum").innerHTML =
             result;
 
+    </script>
+</div>
+
+<div>
+    <h3>JavaScript Numbers</h3>
+    <p>JavaScript will try to convert strings to numbers when
+    dividing:</p>
+
+    <p id="divDemo"></p>
+
+    <script>
+        var X = "100";
+        var Y = "10";
+        var Z = X / Y;
+
+        document.getElementById("divDemo").innerHTML = Z;
     </script>
 </div>
 
