@@ -221,11 +221,13 @@
 
     <p>Infinity is returned if you calculate a number outside
     the largest possible number:</p>
-
     <p id="infiDemo1"></p>
 
     <p>Division by zero generates Infinity:</p>
     <p id="infiDemo2"></p>
+
+    <p>Infinity is a number:</p>
+    <p id="infiDemo3"></p>
 
     <script>
         var myNumber = 2;
@@ -233,6 +235,8 @@
 
         var inX = 2/0;
         var inY = -2/0;
+
+        var infiX = Infinity;
 
         while (myNumber != Infinity) {
             myNumber = myNumber * myNumber;
@@ -242,6 +246,8 @@
         document.getElementById("infiDemo1").innerHTML = txt;
         document.getElementById("infiDemo2").innerHTML =
             inX + "<br>" + inY;
+        document.getElementById("infiDemo3").innerHTML =
+            typeof infiX;
     </script>
 </div>
 
