@@ -283,6 +283,21 @@
 
 <div>
     <h3>Numbers Can Be Objects</h3>
+    <p>A number can be an object, but there is no need to
+    create a number as an object.</p>
+
+    <p id="numObjDemo"></p>
+
+    <script>
+        var NOx = 123;
+        var NOy = new Number(123);
+
+        document.getElementById("numObjDemo").innerHTML =
+        typeof NOx +
+        "<br>" +
+        typeof NOy;
+    </script>
 </div>
+
 </body>
 </html>
