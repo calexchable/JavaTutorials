@@ -292,9 +292,20 @@
     <p>Numbers and objects cannot be safely compared.</p>
     <p id="numObjDemo2"></p>
 
+    <p id="numObjDemo3"></p>
+
+    <p>The first example uses == operator, it's true because the
+    values are equal. However the second example uses ===
+    operator which comes out to be false.</p>
+
+    <p>JavaScript objects cannot be compared.</p>
+
+    <p id="numObjDemo4"></p>
+
     <script>
         var NOx = 123;
         var NOy = new Number(123);
+        var NOz = new Number(123);
 
         document.getElementById("numObjDemo").innerHTML =
             typeof NOx +
@@ -303,6 +314,12 @@
 
         document.getElementById("numObjDemo2").innerHTML =
             (NOx == NOy);
+
+        document.getElementById("numObjDemo3").innerHTML =
+            (NOx === NOy);
+
+        document.getElementById("numObjDemo4").innerHTML =
+            (NOy == NOz);
     </script>
 </div>
 
