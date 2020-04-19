@@ -137,4 +137,11 @@ public class JSTutorialController {
 
         return "number";
     }
+
+    @RequestMapping(value = "numberMethods")
+    public String numberMethods(Model model) {
+        model.addAttribute("title", "Number Methods");
+
+        return "numberMethods";
+    }
 }
