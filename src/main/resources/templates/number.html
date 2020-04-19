@@ -283,19 +283,26 @@
 
 <div>
     <h3>Numbers Can Be Objects</h3>
+
     <p>A number can be an object, but there is no need to
     create a number as an object.</p>
-
     <p id="numObjDemo"></p>
+
+    <p>Never create numbers as objects.</p>
+    <p>Numbers and objects cannot be safely compared.</p>
+    <p id="numObjDemo2"></p>
 
     <script>
         var NOx = 123;
         var NOy = new Number(123);
 
         document.getElementById("numObjDemo").innerHTML =
-        typeof NOx +
-        "<br>" +
-        typeof NOy;
+            typeof NOx +
+            "<br>" +
+            typeof NOy;
+
+        document.getElementById("numObjDemo2").innerHTML =
+            (NOx == NOy);
     </script>
 </div>
 
