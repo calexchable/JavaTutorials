@@ -30,5 +30,36 @@
             (100 + 23).toString();
     </script>
 </div>
+
+<div>
+    <h3>toExponential() Method</h3>
+
+    <p>
+        The toExponential() Method returns a string, with the
+        number rounded and written using exponential notation.
+    </p>
+
+    <p>
+        An optional parameter defines the number of digits behind
+        the decimal point.
+    </p>
+
+    <p id="exponentialDemo"></p>
+
+    <script>
+        var x2 = 96.56;
+
+        document.getElementById("exponentialDemo").innerHTML =
+            x2.toExponential() + "<br>" +
+            x2.toExponential(2) + "<br>" +
+            x2.toExponential(4) + "<br>" +
+            x2.toExponential(6);
+    </script>
+</div>
+
+<div>
+    <h3>toFixed() Method</h3>
+</div>
+
 </body>
 </html>
