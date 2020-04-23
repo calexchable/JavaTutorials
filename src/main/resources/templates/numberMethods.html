@@ -120,6 +120,9 @@
     strings to numbers:</p>
     <p id="parseIntDemo"></p>
 
+    <p>The parseFloat() method converts strings to numbers:</p>
+    <p id="parseFloatDemo"></p>
+
     <script>
         document.getElementById("numberMethDemo").innerHTML =
             Number(true) + "<br>" +
@@ -143,6 +146,13 @@
             parseInt("10 6") + "<br>" +
             parseInt("10 years") + "<br>" +
             parseInt("years 10");
+
+        document.getElementById("parseFloatDemo").innerHTML =
+            parseFloat("10") + "<br>" +
+            parseFloat("10.33") + "<br>" +
+            parseFloat("10 6") + "<br>" +
+            parseFloat("10 years") + "<br>" +
+            parseFloat("years 10");
     </script>
 </div>
 
