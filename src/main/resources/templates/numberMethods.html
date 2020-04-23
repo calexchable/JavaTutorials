@@ -116,6 +116,10 @@
     <p>--the method above returns the number of milliseconds since
     1/1/1970-- --for some reason--</p>
 
+    <p>The Global JavaScript function parseInt() converts
+    strings to numbers:</p>
+    <p id="parseIntDemo"></p>
+
     <script>
         document.getElementById("numberMethDemo").innerHTML =
             Number(true) + "<br>" +
@@ -132,8 +136,14 @@
         var dateX = new Date("2017-09-30");
         document.getElementById("numberDemo").innerHTML =
             Number(dateX);
-    </script>
 
+        document.getElementById("parseIntDemo").innerHTML =
+            parseInt("10") + "<br>" +
+            parseInt("10.33") + "<br>" +
+            parseInt("10 6") + "<br>" +
+            parseInt("10 years") + "<br>" +
+            parseInt("years 10");
+    </script>
 </div>
 
 </body>
