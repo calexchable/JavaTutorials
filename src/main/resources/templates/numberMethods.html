@@ -111,6 +111,11 @@
     <p>The Number() method converts variables to numbers:</p>
     <p id = "numberMethDemo"></p>
 
+    <p>The Number() method can convert a date to a number:</p>
+    <p id="numberDemo"></p>
+    <p>--the method above returns the number of milliseconds since
+    1/1/1970-- --for some reason--</p>
+
     <script>
         document.getElementById("numberMethDemo").innerHTML =
             Number(true) + "<br>" +
@@ -123,6 +128,10 @@
             Number("10,33") + "<br>" +
             Number("10 33") + "<br>" +
             Number("John");
+
+        var dateX = new Date("2017-09-30");
+        document.getElementById("numberDemo").innerHTML =
+            Number(dateX);
     </script>
 
 </div>
