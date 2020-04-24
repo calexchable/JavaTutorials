@@ -185,15 +185,18 @@
 
     <p>Negative Infinity NEGATIVE_INFINITY</p>
     <p id="negDemo"></p>
+    <p id="negDemo2"></p>
 
     <script>
         var posInfin = Number.POSITIVE_INFINITY;
         var infinDiv = 1/0;
         var negInfin = Number.NEGATIVE_INFINITY;
+        var negInfinDiv = -1/0;
 
         document.getElementById("posDemo").innerHTML = posInfin;
         document.getElementById("posDemo2").innerHTML = infinDiv;
         document.getElementById("negDemo").innerHTML = negInfin;
+        document.getElementById("negDemo2").innerHTML = negInfinDiv;
 
     </script>
 </div>
