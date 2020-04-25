@@ -21,7 +21,9 @@
     <p>Creating an array with "new Array":</p>
     <p id="arrayDemo2"></p>
 
-    
+    <p>JavaScript array elements are accessed using numeric
+    indexes (starting from 0).</p>
+    <p id="accessArray"></p>
 
     <script>
         var cars = [
@@ -34,6 +36,9 @@
 
         document.getElementById("arrayDemo1").innerHTML = cars;
         document.getElementById("arrayDemo2").innerHTML = cars2;
+
+        document.getElementById("accessArray").innerHTML =
+            cars[0] + "<br>" + cars2[2];
     </script>
 </div>
 
