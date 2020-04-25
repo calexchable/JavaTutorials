@@ -25,20 +25,25 @@
     indexes (starting from 0).</p>
     <p id="accessArray"></p>
 
+    <p>Changing an element in an Array</p>
+    <p id="changeArray"></p>
+
     <script>
         var cars = [
             "Saab",
             "Volvo",
-            "BMW"
-        ];
-
+            "BMW"];
         var cars2 = new Array("Saab", "Volvo", "BMW");
+        cars2[0] = "Opel";
 
         document.getElementById("arrayDemo1").innerHTML = cars;
         document.getElementById("arrayDemo2").innerHTML = cars2;
 
         document.getElementById("accessArray").innerHTML =
             cars[0] + "<br>" + cars2[2];
+
+        document.getElementById("changeArray").innerHTML =
+            cars[0] + " vs. " + cars2[0];
     </script>
 </div>
 
