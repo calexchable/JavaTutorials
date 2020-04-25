@@ -206,9 +206,15 @@
 
     <p id="nanDemo1"></p>
 
+    <p>A number divided by a non-numberic string become NaN
+    (Not a Number):</p>
+    <p id="nanDemo2"></p>
+
     <script>
         document.getElementById("nanDemo1").innerHTML =
             Number.NaN;
+        document.getElementById("nanDemo2").innerHTML =
+            100 / "Apple";
     </script>
 </div>
 
