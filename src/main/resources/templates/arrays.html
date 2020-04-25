@@ -53,11 +53,22 @@
     <p>Arrays use number to access its elements.</p>
     <p id = "personArray"></p>
 
+    <p>JavaScript also used names to access object properties.</p>
+    <p id="namedPerson"></p>
+
     <script>
         var person = ["John", "Doe", 46];
+        var persona =
+            {
+                firstName: "Jane",
+                lastName: "Doey",
+                age: 46
+            };
 
         document.getElementById("personArray").innerHTML =
             person[0];
+        document.getElementById("namedPerson").innerHTML =
+            persona["firstName"];
 
     </script>
 
