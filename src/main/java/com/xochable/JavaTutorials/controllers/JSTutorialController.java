@@ -144,4 +144,11 @@ public class JSTutorialController {
 
         return "numberMethods";
     }
+
+    @RequestMapping(value = "arrays")
+    public String arrays(Model model) {
+        model.addAttribute("title", "Arrays");
+
+        return "arrays";
+    }
 }
