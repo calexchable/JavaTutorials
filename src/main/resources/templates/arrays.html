@@ -80,16 +80,23 @@
     <p>Length property returns the length of an array.</p>
     <p id="lengthDemo"></p>
 
+    <p>Accessing the data using numeric indexes
+    starting with 0. Access the first</p>
+    <p id="firstFruit"></p>
+
     <script>
         var fruits = [
             "Banana",
             "Orange",
             "Apple",
             "Mango"
-        ];
+            ];
+        var firstFruit = fruits[0];
 
         document.getElementById("lengthDemo").innerHTML =
             fruits.length;
+        document.getElementById("firstFruit").innerHTML =
+            firstFruit;
     </script>
 
 </div>
