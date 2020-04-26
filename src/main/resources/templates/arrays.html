@@ -84,6 +84,10 @@
     starting with 0. Access the first</p>
     <p id="firstFruit"></p>
 
+    <p>Accessing the data using numeric indexes. To access
+    the last, we will access the length, then subtract 1.</p>
+    <p id="lastFruit"></p>
+
     <script>
         var fruits = [
             "Banana",
@@ -92,11 +96,14 @@
             "Mango"
             ];
         var firstFruit = fruits[0];
+        var lastFruit = fruits[fruits.length - 1];
 
         document.getElementById("lengthDemo").innerHTML =
             fruits.length;
         document.getElementById("firstFruit").innerHTML =
             firstFruit;
+        document.getElementById("lastFruit").innerHTML =
+            lastFruit;
     </script>
 
 </div>
