@@ -105,7 +105,31 @@
         document.getElementById("lastFruit").innerHTML =
             lastFruit;
     </script>
+</div>
 
+<div>
+    <h3>Looping through an Array</h3>
+
+    <p>The best way to loop trough an array is using a
+    standard for loop:</p>
+
+    <p id="loopDemo"></p>
+
+    <script>
+        var fruits, text, fLen, i;
+
+        fruits = ["Banana", "Orange", "Apple", "Mango"];
+        fLen = fruits.length;
+
+        text = "<ul>";
+        for (i = 0; i < fLen; i++) {
+            text += "<li>" + fruits[i] + "</li>";
+            }
+        text += "</ul>";
+
+        document.getElementById("loopDemo").innerHTML =
+            text;
+    </script>
 </div>
 
 </body>
