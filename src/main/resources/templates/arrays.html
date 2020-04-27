@@ -132,5 +132,32 @@
     </script>
 </div>
 
+<div>
+    <h3>J.S. Array forEach function</h3>
+
+    <p>Array.forEach() calls a function for each array
+    element.</p>
+
+    <p>Array.forEach() is not supported in Internet
+    Explorer 8 or earlier versions.</p>
+
+    <p id="eachDemo"></p>
+
+    <script>
+        var eachFruit, eachText;
+
+        eachFruit = ["Banana1", "Orange1", "Apple1", "Mango1"];
+
+        eachText = "<ul>";
+        eachFruit.forEach(fruitLister);
+        eachText += "</ul>";
+
+        document.getElementById("eachDemo").innerHTML = eachText;
+
+        function fruitLister(value) {
+            eachText += "<li>" + value + "</li>";}
+    </script>
+</div>
+
 </body>
 </html>
