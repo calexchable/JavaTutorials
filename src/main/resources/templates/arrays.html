@@ -159,5 +159,23 @@
     </script>
 </div>
 
+<div>
+    <h3>Appending an array</h3>
+
+    <p>The push method appends a new element to an array.</p>
+
+    <button onclick="addFunction()">Add a Fruit!</button>
+
+    <p id="appendDemo"></p>
+
+    <script>
+        document.getElementById("appendDemo").innerHTML = fruits;
+
+        function addFunction() {
+            fruits.push("Lemon");
+            document.getElementById("appendDemo").innerHTML = fruits;
+         }
+    </script>
+</div>
 </body>
 </html>
