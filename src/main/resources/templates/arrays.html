@@ -165,15 +165,26 @@
     <p>The push method appends a new element to an array.</p>
 
     <button onclick="addFunction()">Add a Fruit!</button>
-
     <p id="appendDemo"></p>
+
+    <p>The length property can also provide an easy way to append
+     new elements to an array without using the push() method.</p>
+
+    <button onclick="lengthAppend()">Add a Lime!</button>
+    <p id="appendDemo2"></p>
 
     <script>
         document.getElementById("appendDemo").innerHTML = fruits;
+        document.getElementById("appendDemo2").innerHTML = fruits;
 
         function addFunction() {
             fruits.push("Lemon");
             document.getElementById("appendDemo").innerHTML = fruits;
+         }
+
+         function lengthAppend() {
+            fruits[fruits.length] = "Lime";
+            document.getElementById("appendDemo2").innerHTML = fruits;
          }
     </script>
 </div>
