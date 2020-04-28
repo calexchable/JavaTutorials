@@ -188,5 +188,31 @@
          }
     </script>
 </div>
+
+<div>
+    <h3>Warning!</h3>
+
+    <p>Adding Element with high indexes can create undefined
+    "holes in an array.</p>
+
+    <p id="demoWithHoles"></p>
+
+    <script>
+        var fruitsList, textHole, fLenHole, i;
+            fruitsList = ["Banana", "Orange", "Apple", "Mango"];
+            fruitsList[6] = "Lemon";
+
+            fLenHole = fruitsList.length;
+            textHole = "";
+
+        for (i = 0; i < fLenHole; i++) {
+            textHole += fruitsList[i] + "<br>";
+        }
+
+        document.getElementById("demoWithHoles").innerHTML =
+            textHole;
+    </script>
+</div>
+
 </body>
 </html>
