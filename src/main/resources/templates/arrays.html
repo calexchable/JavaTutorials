@@ -280,18 +280,27 @@
     object:</p>
     <p id="recognize"></p>
 
-    <p>Solution 1:</p>
+    <h4>Solution 1:</h4>
     <p>The new ECMASCRIPT 5 method isArray returns true
     when used on an array:</p>
-
     <p id = "recognize2"></p>
 
+    <h4>Solution 2:</h4>
+    <p>Create a "home made" isArray() function to return true
+    when used on an array:</p>
+    <p id="recognize3"></p>
 
     <script>
         document.getElementById("recognize").innerHTML =
             typeof fruits;
         document.getElementById("recognize2").innerHTML =
             Array.isArray(fruits);
+        document.getElementById("recognize3").innerHTML =
+            isArray(fruits);
+
+        function isArray(myArray) {
+            return myArray.constructor.toString().indexOf("Array") > - 1;
+        }
     </script>
 </div>
 
