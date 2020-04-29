@@ -217,7 +217,19 @@
 <div>
     <h3>Associative Arrays</h3>
 
-    
+    <p id="arrayDemo"></p>
+
+    <script>
+        var person = [];
+        person[0] = "John";
+        person[1] = "Doe";
+        person[2] = 46;
+
+        document.getElementById("arrayDemo").innerHTML =
+            person[0] + " " + person.length;
+    </script>
+
+
 </div>
 
 </body>
