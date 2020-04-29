@@ -248,7 +248,22 @@
 
         document.getElementById("errorDemo").innerHTML =
             person2[0] + " " + person2.length;
-</script>
+    </script>
+</div>
+
+<div>
+    <h3>JavaScript Array</h3>
+
+    <p>Avoid using new Array(). Use [] instead.</p>
+    <p id="newArrayDemo"></p>
+
+    <script>
+        //var points = new Array(40, 100, 1, 5, 25, 10);
+        var points = [40, 100, 1, 5, 25, 10];
+
+        document.getElementById("newArrayDemo").innerHTML =
+            points[0];
+    </script>
 </div>
 
 </body>
