@@ -278,12 +278,20 @@
 
     <p>The typeof operator, when used on an array, returns
     object:</p>
-
     <p id="recognize"></p>
+
+    <p>Solution 1:</p>
+    <p>The new ECMASCRIPT 5 method isArray returns true
+    when used on an array:</p>
+
+    <p id = "recognize2"></p>
+
 
     <script>
         document.getElementById("recognize").innerHTML =
             typeof fruits;
+        document.getElementById("recognize2").innerHTML =
+            Array.isArray(fruits);
     </script>
 </div>
 
