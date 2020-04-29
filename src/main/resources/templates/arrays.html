@@ -228,8 +228,27 @@
         document.getElementById("arrayDemo").innerHTML =
             person[0] + " " + person.length;
     </script>
+</div>
 
+<div>
+    <h3>Some mistakes might be made</h3>
 
+    <p>If you use a named index when accessing an array,
+    JavaScript will redefine the array to a standard object,
+    and some array methods and properties will produce
+    undefined or incorrect results.</p>
+
+    <p id="errorDemo"></p>
+
+    <script>
+        var person2 = [];
+        person2["firstName"] = "John";
+        person2["lastName"] = "Doe";
+        person2["age"] = 46;
+
+        document.getElementById("errorDemo").innerHTML =
+            person2[0] + " " + person2.length;
+</script>
 </div>
 
 </body>
