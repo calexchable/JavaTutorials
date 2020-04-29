@@ -290,6 +290,10 @@
     when used on an array:</p>
     <p id="recognize3"></p>
 
+    <h4>Solution 3:</h4>
+    <p>The instanceof operator returns tru when used on an array:</p>
+    <p id="recognize4"></p>
+
     <script>
         document.getElementById("recognize").innerHTML =
             typeof fruits;
@@ -297,6 +301,8 @@
             Array.isArray(fruits);
         document.getElementById("recognize3").innerHTML =
             isArray(fruits);
+        document.getElementById("recognize4").innerHTML =
+            fruits instanceof Array;
 
         function isArray(myArray) {
             return myArray.constructor.toString().indexOf("Array") > - 1;
