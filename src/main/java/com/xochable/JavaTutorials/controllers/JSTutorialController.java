@@ -151,4 +151,11 @@ public class JSTutorialController {
 
         return "arrays";
     }
+
+    @RequestMapping(value = "arrayMethods")
+    public String arrayMethods(Model model) {
+        model.addAttribute("title", "Array Methods");
+
+        return "arrayMethods";
+    }
 }
