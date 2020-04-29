@@ -257,12 +257,19 @@
     <p>Avoid using new Array(). Use [] instead.</p>
     <p id="newArrayDemo"></p>
 
+    <p>Second example: "points2" is creating an array with 40
+    undefined elements!!!!</p>
+    <p id="newArrayDemo2"></p>
+
     <script>
         //var points = new Array(40, 100, 1, 5, 25, 10);
         var points = [40, 100, 1, 5, 25, 10];
+        var points2 = new Array(40);
 
         document.getElementById("newArrayDemo").innerHTML =
             points[0];
+        document.getElementById("newArrayDemo2").innerHTML =
+            points2[0];
     </script>
 </div>
 
