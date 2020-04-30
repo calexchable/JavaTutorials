@@ -159,5 +159,27 @@
     </script>
 </div>
 
+<div>
+    <h3>unshift()</h3>
+
+    <p>The unshift() method returns the length of the new array:</p>
+
+    <p id="unshift01"></p>
+    <p id="unshift02"></p>
+    <p id="unshift03"></p>
+
+    <script>
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("unshift01").innerHTML = fruits;
+        document.getElementById("unshift02").innerHTML = fruits.unshift("Lemon");
+        document.getElementById("unshift03").innerHTML = fruits;
+    </script>
+
+    <p><b>Note:</b>
+        The unshift() method does not work properly in Internet Explorer
+        8 and earlier, the values will be inserted, but the return value
+        will be <em>undefined</em></p>
+</div>
+
 </body>
 </html>
