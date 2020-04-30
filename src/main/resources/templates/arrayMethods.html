@@ -181,5 +181,22 @@
         will be <em>undefined</em></p>
 </div>
 
+<div>
+    <h3>Changing Elements</h3>
+
+    <p>Array elements are accessed using their index number:</p>
+
+    <p id="changeDemo1"></p>
+    <p id="changeDemo2"></p>
+
+    <script>
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+        document.getElementById("changeDemo1").innerHTML = fruits;
+        fruits[0] = "Kiwi";
+        document.getElementById("changeDemo2").innerHTML = fruits;
+    </script>
+</div>
+
 </body>
 </html>
