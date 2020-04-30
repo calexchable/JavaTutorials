@@ -198,5 +198,28 @@
     </script>
 </div>
 
+<div>
+    <h3>Changing with Length property</h3>
+
+    <p>The length property provides an easy way to append new
+    elements to an array without using the push() method.</p>
+
+    <button onclick="lengthAppend()">Try Adding a Kiwi!</button>
+
+    <p id="changeDemo3"></p>
+
+    <script>
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+        document.getElementById("changeDemo3").innerHTML = fruits;
+
+        function lengthAppend() {
+            fruits[fruits.length] = "Kiwi";
+
+            document.getElementById("changeDemo3").innerHTML = fruits;
+        }
+    </script>
+</div>
+
 </body>
 </html>
