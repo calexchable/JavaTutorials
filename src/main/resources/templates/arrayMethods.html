@@ -81,5 +81,30 @@
     </script>
 </div>
 
+<div>
+    <h3>push()</h3>
+
+    <p>The push() method returns the new array length.</p>
+
+    <button onclick="pushFunc()">Try This Push!</button>
+
+    <p id="pushDemo1"></p>
+    <p id="pushDemo2"></p>
+
+    <script>
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+        document.getElementById("pushDemo1").innerHTML = fruits;
+
+        function pushFunc() {
+            document.getElementById("pushDemo2").innerHTML =
+                fruits.push("Kiwi");
+            document.getElementById("pushDemo1").innerHTML =
+                fruits;
+        }
+    </script>
+
+</div>
+
 </body>
 </html>
