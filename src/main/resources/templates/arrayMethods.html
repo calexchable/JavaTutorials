@@ -103,7 +103,40 @@
                 fruits;
         }
     </script>
+</div>
 
+<div>
+    <h3>shift()</h3>
+
+    <p>The shift() method removes the first element of an array
+    (and "shifts" all other elements to the left):</p>
+
+    <p id="shiftDemo1"></p>
+    <p id="shiftDemo2"></p>
+
+    <script>
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("shiftDemo1").innerHTML = fruits;
+        fruits.shift();
+        document.getElementById("shiftDemo2").innerHTML = fruits;
+    </script>
+</div>
+
+<div>
+    <h3>shift()</h3>
+
+    <p>The shift() method returns the element that was shifted out.</p>
+
+    <p id="shift01"></p>
+    <p id="shift02"></p>
+    <p id="shift03"></p>
+
+    <script>
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("shift01").innerHTML = fruits;
+        document.getElementById("shift02").innerHTML = fruits.shift();
+        document.getElementById("shift03").innerHTML = fruits;
+    </script>
 </div>
 
 </body>
