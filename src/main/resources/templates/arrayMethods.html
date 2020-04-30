@@ -52,11 +52,13 @@
     <p id="popDemo1"></p>
     <p id="popDemo2"></p>
 
+    <p>The return value of the pop() method is the removed item.</p>
+    <p id="popDemo3"></p>
+
     <script>
         document.getElementById("popDemo1").innerHTML = fruits;
-
-        fruits.pop();
-        document.getElementById("popDemo2").innerHTML = fruits;
+        document.getElementById("popDemo2").innerHTML = fruits.pop();
+        document.getElementById("popDemo3").innerHTML = fruits;
     </script>
 </div>
 
