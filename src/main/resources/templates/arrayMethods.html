@@ -62,5 +62,24 @@
     </script>
 </div>
 
+<div>
+    <h3>push()</h3>
+
+    <p>The push() method appends a new element to an array.</p>
+
+    <button onclick="appendFunc()">Append that Array!</button>
+
+    <p id="pushDemo"></p>
+
+    <script>
+        document.getElementById("pushDemo").innerHTML = fruits;
+
+        function appendFunc() {
+            fruits.push("Kiwi");
+            document.getElementById("pushDemo").innerHTML = fruits;
+        }
+    </script>
+</div>
+
 </body>
 </html>
