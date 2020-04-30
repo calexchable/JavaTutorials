@@ -139,5 +139,25 @@
     </script>
 </div>
 
+<div>
+    <h3>unshift()</h3>
+
+    <p>The unshift() method adds new elements to the beginning of an
+        array.</p>
+
+    <button onclick = "unshiftFunc()">Try it!</button>
+
+    <p id="unshiftDemo"></p>
+
+    <script>
+        document.getElementById("unshiftDemo").innerHTML = fruits;
+
+        function unshiftFunc() {
+            fruits.unshift("Lemon");
+            document.getElementById("unshiftDemo").innerHTML = fruits;
+        }
+    </script>
+</div>
+
 </body>
 </html>
