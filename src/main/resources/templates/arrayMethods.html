@@ -242,5 +242,27 @@
     </script>
 </div>
 
+<div>
+    <h3>splice()</h3>
+
+    <p>The splice() method adds new elements to an array.</p>
+
+    <button onclick="sliceFunc()">Try and Splice!</button>
+
+    <p id="spliceDemo1"></p>
+    <p id="spliceDemo2"></p>
+
+    <script>
+        document.getElementById("spliceDemo1").innerHTML =
+            "Original Array:<br>" + fruits;
+
+        function sliceFunc() {
+            fruits.splice(2, 0, "Lemon", "Kiwi");
+            document.getElementById("spliceDemo2").innerHTML =
+                "New Array:<br>" + fruits;
+        }
+    </script>
+</div>
+
 </body>
 </html>
