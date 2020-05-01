@@ -221,5 +221,26 @@
     </script>
 </div>
 
+<div>
+    <h3>Deleting Elements</h3>
+
+    <p>Deleting elements leaves undefined holes in an array.</p>
+
+    <p id="deleteDemo1"></p>
+    <p id="deleteDemo2"></p>
+
+    <p>best to use pop() or shift() methods, instead.</p>
+
+    <script>
+        document.getElementById("deleteDemo1").innerHTML =
+        "The first fruit is: " + fruits[0];
+
+        delete fruits[0];
+
+        document.getElementById("deleteDemo2").innerHTML =
+        "The first fruit (after deletion) is: " + fruits[0];
+    </script>
+</div>
+
 </body>
 </html>
