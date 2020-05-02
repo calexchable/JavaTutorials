@@ -374,16 +374,25 @@
 
     <p id="sliceDemo2"></p>
 
+    <p>When the slice() method is given two arguments, it selects
+    array elements from the start argument, and up to, but not including,
+    the end argument.</p>
+
+    <p id="sliceDemo3"></p>
+
     <script>
         var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
 
         var citrus = fruits.slice(1);
         var citrus2 = fruits.slice(3);
+        var citrus3 = fruits.slice(1, 3);
 
         document.getElementById("sliceDemo").innerHTML =
             fruits + "<br><br>" + citrus;
         document.getElementById("sliceDemo2").innerHTML =
             fruits + "<br><br>" + citrus2;
+        document.getElementById("sliceDemo3").innerHTML =
+            fruits + "<br><br>" + citrus3;
     </script>
 </div>
 
