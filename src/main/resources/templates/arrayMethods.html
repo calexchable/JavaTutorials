@@ -361,5 +361,23 @@
     </script>
 </div>
 
+<div>
+    <h3>slice()</h3>
+
+    <p>This example slices out a part of an array starting from array
+    element 1 ("orange").</p>
+
+    <p id="sliceDemo"></p>
+
+    <script>
+        var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+
+        var citrus = fruits.slice(1);
+
+        document.getElementById("sliceDemo").innerHTML =
+            fruits + "<br><br>" + citrus;
+    </script>
+</div>
+
 </body>
 </html>
