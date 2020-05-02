@@ -412,11 +412,18 @@
 
     <p id="stringDemo"></p>
 
+    <p>JavaScript automatically converts an array to a comma
+    separated string when a simple value is expected:</p>
+
+    <p id="stringDemo2"></p>
+
     <script>
         var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
 
         document.getElementById("stringDemo").innerHTML =
             fruits.toString();
+        document.getElementById("stringDemo2").innerHTML =
+            fruits;
     </script>
 </div>
 
