@@ -295,6 +295,25 @@
 </div>
 
 <div>
+    <h3>splice() to remove</h3>
+
+    <p>The splice() methods can be used to remove array elements.</p>
+
+    <button onclick="spliceRemove()"></button>
+
+    <p id="spliceRemoveDemo">Remove the first fruit!</p>
+
+    <script>
+        document.getElementById("spliceRemoveDemo").innerHTML = fruits;
+
+        function spliceRemove() {
+            fruits.splice(0, 1);
+            document.getElementById("spliceRemoveDemo").innerHTML = fruits;
+        }
+    </script>
+</div>
+
+<div>
     <h3>concat()</h3>
 
     <p>The concat() method is used to merge (concatenate) arrays:</p>
