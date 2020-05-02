@@ -158,4 +158,11 @@ public class JSTutorialController {
 
         return "arrayMethods";
     }
+
+    @RequestMapping(value = "arraySort")
+    public String arraySort(Model model) {
+        model.addAttribute("title", "Array Sort");
+
+        return "arraySort";
+    }
 }
