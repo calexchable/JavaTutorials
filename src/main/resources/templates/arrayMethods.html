@@ -369,13 +369,21 @@
 
     <p id="sliceDemo"></p>
 
+    <p>This example slices out a part of an array starting from array
+    element 3 (apple).</p>
+
+    <p id="sliceDemo2"></p>
+
     <script>
         var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
 
         var citrus = fruits.slice(1);
+        var citrus2 = fruits.slice(3);
 
         document.getElementById("sliceDemo").innerHTML =
             fruits + "<br><br>" + citrus;
+        document.getElementById("sliceDemo2").innerHTML =
+            fruits + "<br><br>" + citrus2;
     </script>
 </div>
 
