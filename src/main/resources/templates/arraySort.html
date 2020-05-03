@@ -15,5 +15,26 @@
 
 <h2>JavaScript Array Sort</h2>
 
+<div>
+    <h3>sort()</h3>
+
+    <p>The sort() method sorts an array alphabetically.</p>
+
+    <button onclick="alphaSort()">Alphabetize this!</button>
+
+    <p id="alphaDemo"></p>
+
+    <script>
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+        document.getElementById("alphaDemo").innerHTML = fruits;
+
+        function alphaSort() {
+            fruits.sort();
+            document.getElementById("alphaDemo").innerHTML = fruits;
+        }
+    </script>
+</div>
+
 </body>
 </html>
