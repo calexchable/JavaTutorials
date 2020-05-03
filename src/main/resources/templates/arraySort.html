@@ -36,5 +36,28 @@
     </script>
 </div>
 
+<div>
+    <h3>Sort Reverse</h3>
+
+    <p>The reverse() method reverses the elements in an array.</p>
+
+    <p>By combining sort() and reverse() you can sort an array in
+    descending alphabetical order.</p>
+
+    <button onclick="revAlphaSort()">Descending order!</button>
+
+    <p id="revAlphaDemo"></p>
+
+    <script>
+        document.getElementById("revAlphaDemo").innerHTML = fruits;
+
+        function revAlphaSort() {
+            fruits.sort();
+            fruits.reverse();
+            document.getElementById("revAlphaDemo").innerHTML = fruits;
+        }
+    </script>
+</div>
+
 </body>
 </html>
