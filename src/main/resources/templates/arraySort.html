@@ -63,21 +63,30 @@
     <h3>Numerical Sorting - Compare Function</h3>
 
     <p>Click the button to sort the array in ascending order.</p>
-
     <button onclick="ascendSort()">Ascend!</button>
     <p id="ascendDemo"></p>
+
+    <p>Click this button to sort the array in descending order.</p>
+    <button onclick="descendSort()">Descend!</button>
+    <p id="descendDemo"></p>
+
 
     <script>
         var points = [40, 100, 1, 5, 25, 10];
 
         document.getElementById("ascendDemo").innerHTML = points;
+        document.getElementById("descendDemo").innerHTML = points;
 
         function ascendSort() {
             points.sort(function(a, b) {
                 return a - b
-            });
-
+                });
             document.getElementById("ascendDemo").innerHTML = points;
+        }
+
+        function descendSort() {
+            points.sort(function(a, b) {return b - a});
+            document.getElementById("descendDemo").innerHTML = points;
         }
     </script>
 </div>
