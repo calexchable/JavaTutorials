@@ -91,5 +91,51 @@
     </script>
 </div>
 
+<div>
+    <h3>The Compare Function</h3>
+
+    <p>Click the buttons to sort the array alphabetically
+    or numerically.</p>
+
+    <button onclick="alphaFunc()">Sort Alphabetically</button>
+    <button onclick="numFunc()">Sort Numerically</button>
+
+    <p id="sortDemo"></p>
+
+    <script>
+        document.getElementById("sortDemo").innerHTML = points
+
+        function alphaFunc() {
+            points.sort();
+            document.getElementById("sortDemo").innerHTML = points;
+        }
+
+        function numFunc() {
+            points.sort(function(a, b){return a - b});
+            document.getElementById("sortDemo").innerHTML = points;
+        }
+    </script>
+</div>
+
+<div>
+    <h3>Random Sort</h3>
+
+    <p>Click the button (again and again) to sort to array
+    in random order.</p>
+
+    <button onclick="randomFunc()">Randomize</button>
+
+    <p id="randomSort"></p>
+
+    <script>
+        document.getElementById("randomSort").innerHTML = points;
+
+        function randomFunc() {
+            points.sort(function(a, b){return 0.5 - Math.random()});
+            document.getElementById("randomSort").innerHTML = points
+        }
+    </script>
+</div>
+
 </body>
 </html>
