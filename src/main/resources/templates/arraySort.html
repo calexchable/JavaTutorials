@@ -169,10 +169,15 @@
     <h3>Find the Highest (or Lowest) Array Value</h3>
 
     <p>The lowest number is <span id="lowNum"></span></p>
+    <p>The highest number is <span id="highNum"></span></p>
 
     <script>
         points.sort(function(a, b){return a - b});
-        document.getElementById("lowNum").innerHTML = points[0];
+        document.getElementById("lowNum").innerHTML =
+            points[0];
+
+        document.getElementById("highNum").innerHTML =
+            points[points.length-1];
     </script>
 </div>
 
