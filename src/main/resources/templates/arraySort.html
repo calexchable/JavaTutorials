@@ -205,5 +205,29 @@
     </script>
 </div>
 
+<div>
+    <h3>JavaScript methods Max Min on Array</h3>
+
+    <p>The highest number is <span id="maxJSDemo"></span></p>
+
+    <script>
+        document.getElementById("maxJSDemo").innerHTML =
+            myJSArrayMax(points);
+
+        function myJSArrayMax(arr) {
+            var len = arr.length;
+            var max = -Infinity
+
+            while (len--) {
+                if (arr[len] > max) {
+                    max = arr[len];
+                }
+            }
+            return max;
+        }
+    </script>
+
+</div>
+
 </body>
 </html>
