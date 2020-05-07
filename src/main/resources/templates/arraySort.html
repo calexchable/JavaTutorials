@@ -249,10 +249,14 @@
 
     <p>Click the buttons to sort car objects by year.</p>
     <p>(We are using the compare function to do this)</p>
+    <p>Or sort by type (a little more complex code).</p>
 
     <button onclick="carCompareYear()">Sort by Year</button>
+    <button onclick="sortByName()">Sort by Name</button>
 
     <p id="displayCars"></p>
+
+
 
     <script>
         var cars = [
@@ -272,6 +276,18 @@
 
         function carCompareYear() {
             cars.sort(function(a, b){return a.year - b.year});
+            displayCars();
+        }
+
+        function sortByName() {
+            cars.sort(function(a, b) {
+                var x = a.type.toLowerCase();
+                var y = b.type.toLowerCase();
+
+                if (x < y) {return -1;}
+                if (x > y) {return 1;}
+                return 0;
+            };
             displayCars();
         }
     </script>
