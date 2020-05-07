@@ -246,6 +246,35 @@
 
 <div>
     <h3>Sorting Object Arrays</h3>
+
+    <p>Click the buttons to sort car objects by year.</p>
+    <p>(We are using the compare function to do this)</p>
+
+    <button onclick="carCompareYear()">Sort by Year</button>
+
+    <p id="displayCars"></p>
+
+    <script>
+        var cars = [
+            {type:"Volvo", year: 2016},
+            {type:"Saab", year: 2001},
+            {type:"BMW", year: 2010}
+        ];
+
+        displayCars();
+
+        function displayCars() {
+            document.getElementById("displayCars").innerHTML =
+            cars[0].type + " " + cars[0].year + "<br>" +
+            cars[1].type + " " + cars[1].year + "<br>" +
+            cars[2].type + " " + cars[2].year;
+        }
+
+        function carCompareYear() {
+            cars.sort(function(a, b){return a.year - b.year});
+            displayCars();
+        }
+    </script>
 </div>
 
 </body>
