@@ -181,5 +181,20 @@
     </script>
 </div>
 
+<div>
+    <h3>Math.max() on Array</h3>
+
+    <p>The highest number is <span id="mathMaxDemo"></span></p>
+
+    <script>
+        document.getElementById("mathMaxDemo").innerHTML =
+            myArrayMax(points);
+
+        function myArrayMax(arr) {
+            return Math.max.apply(null, arr);
+            }
+    </script>
+</div>
+
 </body>
 </html>
