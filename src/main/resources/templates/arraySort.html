@@ -209,14 +209,18 @@
     <h3>JavaScript methods Max Min on Array</h3>
 
     <p>The highest number is <span id="maxJSDemo"></span></p>
+    <p>The lowest number is <span id="minJSDemo"></span></p>
 
     <script>
         document.getElementById("maxJSDemo").innerHTML =
             myJSArrayMax(points);
 
+        document.getElementById("minJSDemo").innerHTML =
+            myJSArrayMin(points);
+
         function myJSArrayMax(arr) {
             var len = arr.length;
-            var max = -Infinity
+            var max = -Infinity;
 
             while (len--) {
                 if (arr[len] > max) {
@@ -224,6 +228,18 @@
                 }
             }
             return max;
+        }
+
+        function myJSArrayMin(arr) {
+            var len = arr.length;
+            var min = Infinity;
+
+            while (len--) {
+                if (arr[len] < min) {
+                    min = arr[len];
+                }
+            }
+            return min;
         }
     </script>
 
