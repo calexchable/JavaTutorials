@@ -84,14 +84,26 @@
 
     <p id="filterDemo"></p>
 
+    <p>alternate method to write the function below (except)
+    with numbers under 18.</p>
+
+    <p id="filterDemo2"></p>
+
     <script>
         var over18 = numbers.filter(over18Func);
+        var under18 = numbers.filter(under18Func);
 
         document.getElementById("filterDemo").innerHTML = over18;
+        document.getElementById("filterDemo2").innerHTML = under18;
 
         function over18Func(value, index, array) {
             return value > 18;
         }
+
+        function under18Func(value) {
+            return value < 18;
+        }
+
     </script>
 </div>
 
