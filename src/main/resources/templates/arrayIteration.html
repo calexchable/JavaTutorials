@@ -55,14 +55,24 @@
 
     <p id="mapDemo"></p>
 
+    <p>Below is an alternate method to employ .map().</p>
+    <p id="mapDemo2"></p>
+
     <script>
         var numbers2 = numbers.map(doubleFunc);
+        var altNumbers2 = altNumbers.map(doubleFunc2);
 
         document.getElementById("mapDemo").innerHTML = numbers2;
+        document.getElementById("mapDemo2").innerHTML = altNumbers2;
 
         function doubleFunc(value, index, array) {
             return value * 2;
         }
+
+        function doubleFunc2(value) {
+            return value * 2;
+        }
+
     </script>
 </div>
 
