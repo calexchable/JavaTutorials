@@ -165,4 +165,11 @@ public class JSTutorialController {
 
         return "arraySort";
     }
+
+    @RequestMapping(value = "arrayIteration")
+    public String arrayIteration(Model model) {
+        model.addAttribute("title", "Array Iteration");
+
+        return "arrayIteration";
+    }
 }
