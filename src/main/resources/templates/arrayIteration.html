@@ -47,6 +47,25 @@
     </script>
 </div>
 
+<div>
+    <h3>JavaScript Array.map()</h3>
+
+    <p>Creates a new array by performing a function on each array
+    element.</p>
+
+    <p id="mapDemo"></p>
+
+    <script>
+        var numbers2 = numbers.map(doubleFunc);
+
+        document.getElementById("mapDemo").innerHTML = numbers2;
+
+        function doubleFunc(value, index, array) {
+            return value * 2;
+        }
+    </script>
+</div>
+
 
 </body>
 </html>
