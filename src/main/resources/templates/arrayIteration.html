@@ -20,15 +20,29 @@
 
     <p id="eachDemo"></p>
 
+    <p>Below we have an alternate way to write the function.</p>
+
+    <p id="eachDemo2"></p>
+
     <script>
         var txt = "";
+        var altTxt = "";
+
         var numbers = [45, 4, 9, 16, 25];
+        var altNumbers = [450, 40, 90, 160, 250];
 
         numbers.forEach(oneOnLine);
+        altNumbers.forEach(oneOnLine2);
+
         document.getElementById("eachDemo").innerHTML = txt;
+        document.getElementById("eachDemo2").innerHTML = altTxt;
 
         function oneOnLine(value, index, array) {
             txt = txt + value + "<br>";
+        }
+
+        function oneOnLine2(value) {
+            altTxt = altTxt + value + "<br>";
         }
     </script>
 </div>
