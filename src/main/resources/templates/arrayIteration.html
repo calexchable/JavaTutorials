@@ -76,6 +76,24 @@
     </script>
 </div>
 
+<div>
+    <h3>JavaScript Array.filter()</h3>
+
+    <p>Creates a new array with all array elements that passes
+    a test.</p>
+
+    <p id="filterDemo"></p>
+
+    <script>
+        var over18 = numbers.filter(over18Func);
+
+        document.getElementById("filterDemo").innerHTML = over18;
+
+        function over18Func(value, index, array) {
+            return value > 18;
+        }
+    </script>
+</div>
 
 </body>
 </html>
