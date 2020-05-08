@@ -13,6 +13,26 @@
 
 <p>from w3schools.com</p>
 
+<div>
+    <h3>JavaScript Array.forEach()</h3>
+
+    <p>Calls a function once for each array element.</p>
+
+    <p id="eachDemo"></p>
+
+    <script>
+        var txt = "";
+        var numbers = [45, 4, 9, 16, 25];
+
+        numbers.forEach(oneOnLine);
+        document.getElementById("eachDemo").innerHTML = txt;
+
+        function oneOnLine(value, index, array) {
+            txt = txt + value + "<br>";
+        }
+    </script>
+</div>
+
 
 </body>
 </html>
