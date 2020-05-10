@@ -204,6 +204,8 @@
         var reduce = numbers.reduce(sub);
         var reduceRight = numbers.reduceRight(sub);
 
+        document.getElementById("orig").innerHTML =
+            "Original Array: " + numbers;
         document.getElementById("sub1").innerHTML =
             "Reduce: " + reduce;
         document.getElementById("sub2").innerHTML =
