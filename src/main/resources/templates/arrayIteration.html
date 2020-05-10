@@ -190,7 +190,29 @@
     <h3>JavaScript reduceRight() with subtraction</h3>
 
     <p>To check out the difference between reduce() and
-    </p>
+        reduceRight() I'm using subtraction.</p>
+    <p>compare the two results below:</p>
+
+    <p id="orig"></p>
+
+    <p id="sub1"></p>
+    <p id="sub2"></p>
+
+    <script>
+        var numbers = [45, 4, 9, 16, 25];
+
+        var reduce = numbers.reduce(sub);
+        var reduceRight = numbers.reduceRight(sub);
+
+        document.getElementById("sub1").innerHTML =
+            "Reduce: " + reduce;
+        document.getElementById("sub2").innerHTML =
+            "ReduceRight: " + reduceRight;
+
+        function sub(total, value) {
+            return total - value;
+        }
+    </script>
 </div>
 
 </body>
