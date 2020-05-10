@@ -317,5 +317,22 @@
     </script>
 </div>
 
+<div>
+    <h3>JavaScript Array.findIndex()</h3>
+
+    <p id="findIndexDemo"></p>
+
+    <script>
+        var firstA = numberList.findIndex(findIndexFunc);
+
+        document.getElementById("findIndexDemo").innerHTML =
+            "The first number over 18 has index " + firstA;
+
+        function findIndexFunc(value, index, array) {
+            return value > 18;
+        }
+    </script>
+</div>
+
 </body>
 </html>
