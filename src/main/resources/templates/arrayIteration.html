@@ -115,16 +115,25 @@
 
     <p id="reduceDemo1"></p>
 
+    <p>--an alternative way to write the method function.</p>
+    <p id="reduceDemo2"></p>
+
     <script>
         var sum = numbers.reduce(addNumbersUp);
+        var altSum = altNumbers.reduce(addNumbersUp2);
 
         document.getElementById("reduceDemo1").innerHTML =
             "The sum is " + sum;
+        document.getElementById("reduceDemo2").innerHTML =
+            "Now this is going to sum up to " + altSum;
 
         function addNumbersUp(total, value, index, array) {
             return total + value;
         }
 
+        function addNumbersUp2(total, value) {
+            return total + value;
+        }
     </script>
 </div>
 
