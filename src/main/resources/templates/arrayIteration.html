@@ -155,5 +155,43 @@
     </script>
 </div>
 
+<div>
+    <h3>JavaScript Array.reduceRight()</h3>
+
+    <p>Similarly this function finds sum of all numbers
+    in the array. However, reduceRight() works right to left.</p>
+
+    <p id="reduceRightSum"></p>
+
+    <p>We can also write the alternate method with only
+    total and value....</p>
+    <p id="reduceRightSumAlt"></p>
+
+    <script>
+        var sumRight = numbers.reduceRight(rightSum);
+        var sumRightAlt = altNumbers.reduceRight(rightSumAlt);
+
+        document.getElementById("reduceRightSum").innerHTML =
+            "The sum: " + sumRight;
+        document.getElementById("reduceRightSumAlt").innerHTML =
+            "Alt Sum: " + sumRightAlt;
+
+        function rightSum(total, value, index, array) {
+            return total + value;
+        }
+
+        function rightSumAlt(total, value) {
+            return total + value;
+        }
+    </script>
+</div>
+
+<div>
+    <h3>JavaScript reduceRight() with subtraction</h3>
+
+    <p>To check out the difference between reduce() and
+    </p>
+</div>
+
 </body>
 </html>
