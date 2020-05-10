@@ -118,20 +118,38 @@
     <p>--an alternative way to write the method function.</p>
     <p id="reduceDemo2"></p>
 
+    <p>This example has added an initial value to our reduce
+        function.</p>
+    <p id="reduceDemo3"></p>
+
     <script>
         var sum = numbers.reduce(addNumbersUp);
         var altSum = altNumbers.reduce(addNumbersUp2);
+
+        var sum100 = numbers.reduce(reduceFunc100, 100);
+        var altSum100 = altNumbers.reduce(altReduceFunc100, 100);
 
         document.getElementById("reduceDemo1").innerHTML =
             "The sum is " + sum;
         document.getElementById("reduceDemo2").innerHTML =
             "Now this is going to sum up to " + altSum;
+        document.getElementById("reduceDemo3").innerHTML =
+            "I've added 100 to get: " + "<br>" +
+            sum100 + "<br>" + altSum100;
 
         function addNumbersUp(total, value, index, array) {
             return total + value;
         }
 
         function addNumbersUp2(total, value) {
+            return total + value;
+        }
+
+        function reduceFunc100(total, value) {
+            return total + value;
+        }
+
+        function altReduceFunc100(total, value) {
             return total + value;
         }
     </script>
