@@ -217,5 +217,33 @@
     </script>
 </div>
 
+<div>
+    <h3>JavaScript Array.every()</h3>
+
+    <p>The every() method checks if all array values pass a test.</p>
+    <p id="everyDemo"></p>
+
+    <p>alternate method written with only one variable: value.</p>
+    <p id="everyDemo2"></p>
+
+    <script>
+        var allOver18 = numbers.every(allOverFunc);
+        var allOver18alt = numbers.every(allOverFuncAlt);
+
+        document.getElementById("everyDemo").innerHTML =
+            "All over 18 is " + allOver18;
+        document.getElementById("everyDemo2").innerHTML =
+            "All over 18 is " + allOver18alt;
+
+        function allOverFunc(value, index, array) {
+            return value > 18;
+        }
+
+        function allOverFuncAlt(value) {
+            return value > 18;
+        }
+    </script>
+</div>
+
 </body>
 </html>
