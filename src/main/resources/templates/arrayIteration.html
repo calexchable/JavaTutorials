@@ -245,5 +245,24 @@
     </script>
 </div>
 
+<div>
+    <h3>JavaScript Array.some()</h3>
+
+    <p>The some() method checks if some array values pass
+    a test.</p>
+
+    <p id="someDemo"></p>
+
+    <script>
+        var someOver18 = numbers.some(someFunc);
+
+        document.getElementById("someDemo").innerHTML =
+            "Some over 18 is " + someOver18;
+
+        function someFunc(value, index, array) {
+            return value > 18;
+        }
+    </script>
+</div>
 </body>
 </html>
