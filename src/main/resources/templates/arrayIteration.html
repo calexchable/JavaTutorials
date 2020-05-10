@@ -298,5 +298,24 @@
     <p>The lastIndexOf() does not work in Internet Explorer 8
     and earlier versions.</p>
 </div>
+
+<div>
+    <h3>JavaScript Array.find()</h3>
+
+    <p id="findDemo"></p>
+
+    <script>
+        var numberList = [4, 9, 16, 25, 29];
+        var first = numberList.find(findFunc);
+
+        document.getElementById("findDemo").innerHTML =
+            "First number over 18 is " + first;
+
+        function findFunc(value, index, array) {
+            return value > 18;
+        }
+    </script>
+</div>
+
 </body>
 </html>
