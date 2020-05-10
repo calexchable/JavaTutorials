@@ -107,5 +107,26 @@
     </script>
 </div>
 
+<div>
+    <h3>Array.reduce()</h3>
+
+    <p>The example finds the sum of all numbers
+    in the above arrays:</p>
+
+    <p id="reduceDemo1"></p>
+
+    <script>
+        var sum = numbers.reduce(addNumbersUp);
+
+        document.getElementById("reduceDemo1").innerHTML =
+            "The sum is " + sum;
+
+        function addNumbersUp(total, value, index, array) {
+            return total + value;
+        }
+
+    </script>
+</div>
+
 </body>
 </html>
