@@ -172,4 +172,11 @@ public class JSTutorialController {
 
         return "arrayIteration";
     }
+
+    @RequestMapping(value = "dates")
+    public String dates(Model model) {
+        model.addAttribute("title", "Dates");
+
+        return "dates";
+    }
 }
