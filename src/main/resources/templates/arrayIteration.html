@@ -264,5 +264,24 @@
         }
     </script>
 </div>
+
+<div>
+    <h3>JavaScript Array.indexOf()</h3>
+
+    <p id="indexOfDemo"></p>
+
+    <script>
+        var fruits = ["Apple", "Orange", "Apple", "Mango"];
+        var a = fruits.indexOf("Apple");
+
+        document.getElementById("indexOfDemo").innerHTML =
+            "Apple is found in position " + a;
+
+    </script>
+
+    <p>The indexOf() does not work in Internet Explorer 8
+    and earlier versions.</p>
+</div>
+
 </body>
 </html>
