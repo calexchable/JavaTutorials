@@ -55,12 +55,17 @@
     <p>3 numbers to provide Year, Month, Date:</p>
     <p id="newDateDemo6"></p>
 
+    <p>---</p>
+    <p>2 Numbers specify year and month only:</p>
+    <p id="newDateDemo7"></p>
+
     <script>
         var d2 = new Date(2018, 11, 24, 10, 33, 30, 0);
         var d3 = new Date(2018, 11, 24, 10, 33, 30);
         var d4 = new Date(2018, 11, 24, 10, 33);
         var d5 = new Date(2018, 11, 24, 10);
         var d6 = new Date(2018, 11, 24);
+        var d7 = new Date(2018, 11);
 
         document.getElementById("newDateDemo2").innerHTML =
             d2;
@@ -72,6 +77,8 @@
             d5;
         document.getElementById("newDateDemo6").innerHTML =
             d6;
+        document.getElementById("newDateDemo7").innerHTML =
+            d7;
     </script>
 </div>
 
