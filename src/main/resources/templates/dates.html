@@ -82,5 +82,21 @@
     </script>
 </div>
 
+<div>
+    <h3>JavaScript new Date()</h3>
+
+    <p>You cannot omit the month parameter. One parameter
+    will be interpreted as new Date(millisecond).</p>
+
+    <p id="dateMilli"></p>
+
+    <script>
+        var dmilli = new Date(2018);
+
+        document.getElementById("dateMilli").innerHTML =
+            dmilli;
+    </script>
+</div>
+
 </body>
 </html>
