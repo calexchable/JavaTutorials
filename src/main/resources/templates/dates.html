@@ -44,20 +44,23 @@
     January is 0, December is 11.</p>
 
     <p>---</p>
-
     <p>5 numbers specify year, month, day, hour, and minute:</p>
     <p id="newDateDemo4"></p>
 
     <p>---</p>
-
     <p>4 Numbers</p>
     <p id="newDateDemo5"></p>
+
+    <p>---</p>
+    <p>3 numbers to provide Year, Month, Date:</p>
+    <p id="newDateDemo6"></p>
 
     <script>
         var d2 = new Date(2018, 11, 24, 10, 33, 30, 0);
         var d3 = new Date(2018, 11, 24, 10, 33, 30);
         var d4 = new Date(2018, 11, 24, 10, 33);
         var d5 = new Date(2018, 11, 24, 10);
+        var d6 = new Date(2018, 11, 24);
 
         document.getElementById("newDateDemo2").innerHTML =
             d2;
@@ -67,6 +70,8 @@
             d4;
         document.getElementById("newDateDemo5").innerHTML =
             d5;
+        document.getElementById("newDateDemo6").innerHTML =
+            d6;
     </script>
 </div>
 
