@@ -33,14 +33,40 @@
 
     <p>Using new Date(7 numbers), creates a new date object
     with the specified date and time:</p>
-
     <p id="newDateDemo2"></p>
+
+    <p>---</p>
+
+    <p>6 numbers specify year, month, day, hour, minute
+    and second:</p>
+    <p id="newDateDemo3"></p>
+    <p>Please remember that months start counting at 0...
+    January is 0, December is 11.</p>
+
+    <p>---</p>
+
+    <p>5 numbers specify year, month, day, hour, and minute:</p>
+    <p id="newDateDemo4"></p>
+
+    <p>---</p>
+
+    <p>4 Numbers</p>
+    <p id="newDateDemo5"></p>
 
     <script>
         var d2 = new Date(2018, 11, 24, 10, 33, 30, 0);
+        var d3 = new Date(2018, 11, 24, 10, 33, 30);
+        var d4 = new Date(2018, 11, 24, 10, 33);
+        var d5 = new Date(2018, 11, 24, 10);
 
         document.getElementById("newDateDemo2").innerHTML =
             d2;
+        document.getElementById("newDateDemo3").innerHTML =
+            d3;
+        document.getElementById("newDateDemo4").innerHTML =
+            d4;
+        document.getElementById("newDateDemo5").innerHTML =
+            d5;
     </script>
 </div>
 
