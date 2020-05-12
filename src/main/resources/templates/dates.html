@@ -98,5 +98,22 @@
     </script>
 </div>
 
+<div>
+    <h3>Previous Century</h3>
+
+    <p>Two digit years will be interpreted as 19xx:</p>
+    <p id="xxcentDemo"></p>
+
+    <p>One digit years will be interpreted as 190x:</p>
+    <p id="xxcentDemoA"></p>
+
+    <script>
+        var xxd = new Date(99, 11, 24);
+        var xxd2 = new Date(9, 11, 24);
+
+        document.getElementById("xxcentDemo").innerHTML = xxd;
+        documnet.getElementById("xxcentDemo").innerHTML = xxd2;
+    </script>
+</div>
 </body>
 </html>
