@@ -163,5 +163,24 @@
             subBillion;
     </script>
 </div>
+
+<div>
+    <h3>JavaScript Date - One Day in Milliseconds</h3>
+
+    <p>Using new Date(milliseconds), creates a new date object
+    as January 1, 1970, 00:00:00 Universal Time (UTC) plus
+    the millisecond:</p>
+
+    <p id="oneDay"></p>
+
+    <script>
+        var oneDay = new Date(86400000);
+
+        document.getElementById("oneDay").innerHTML = oneDay;
+    </script>
+
+    <p>One day (24 hours) is 86,400,000 milliseconds.</p>
+</div>
+
 </body>
 </html>
