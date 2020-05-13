@@ -196,10 +196,16 @@
     string (a date display standard):</p>
     <p id="UTCDisplay"></p>
 
+    <p>---</p>
+    <p>The toDateString() method converts a date to a date
+    string that is a little more readable:</p>
+    <p id="readableDate"></p>
+
     <script>
         var dateDis = new Date ();
         var dateStringDis = new Date();
         var UTCStringDis = new Date();
+        var readableDate = new Date();
 
         document.getElementById("displayDate").innerHTML =
             dateDis;
@@ -207,6 +213,8 @@
             dateStringDis.toString();
         document.getElementById("UTCDisplay").innerHTML =
             UTCStringDis.toUTCString();
+        document.getElementById("readableDate").innerHTML =
+            readableDate.toDateString();
     </script>
 </div>
 
