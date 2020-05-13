@@ -179,4 +179,11 @@ public class JSTutorialController {
 
         return "dates";
     }
+
+    @RequestMapping(value = "dateFormats")
+    public String dateFormats(Model model) {
+        model.addAttribute("title", "Date Formats");
+
+        return "dateFormats";
+    }
 }
