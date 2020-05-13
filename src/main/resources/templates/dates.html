@@ -191,14 +191,22 @@
     <p>The toString() method converts a date to a string:</p>
     <p id="stringDate"></p>
 
+    <p>---</p>
+    <p>The to UTCString() method converts a date to a UTC
+    string (a date display standard):</p>
+    <p id="UTCDisplay"></p>
+
     <script>
         var dateDis = new Date ();
         var dateStringDis = new Date();
+        var UTCStringDis = new Date();
 
         document.getElementById("displayDate").innerHTML =
             dateDis;
         document.getElementById("stringDate").innerHTML =
             dateStringDis.toString();
+        document.getElementById("UTCDisplay").innerHTML =
+            UTCStringDis.toUTCString();
     </script>
 </div>
 
