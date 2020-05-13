@@ -142,11 +142,21 @@
 
     <p id="milliseconds"></p>
 
+    <p>---</p>
+
+    <p>Let's add one million milliseconds to get to to March 3,
+        1973</p>
+
+    <p id="dayInMarch"></p>
+
     <script>
         var millisecondsD = new Date(0);
+        var addMillionDate = new Date(1000000000000);
 
         document.getElementById("milliseconds").innerHTML =
             millisecondsD;
+        document.getElementById("dayInMarch").innerHTML =
+            addMillionDate;
     </script>
 </div>
 </body>
