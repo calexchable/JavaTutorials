@@ -72,16 +72,22 @@
     <p id="longDate7"></p>
     <p id="longDate8"></p>
 
+    <p>---</p>
+    <p>Case insensitive and commas are ignored.</p>
+    <p id="longDate9"></p>
+
     <script>
         var d5 = new Date("Mar 25 2015");
         var d6 = new Date("25 Mar 2015");
         var d7 = new Date("January 25 2015");
         var d8 = new Date("Jan 25 2015");
+        var d9 = new Date("JANUARY, 25, 2015");
 
         document.getElementById("longDate").innerHTML = d5;
         document.getElementById("longDate6").innerHTML = d6;
         document.getElementById("longDate7").innerHTML = d7;
         document.getElementById("longDate8").innerHTML = d8;
+        document.getElementById("longDate9").innerHTML = d9;
     </script>
 </div>
 
