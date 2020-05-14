@@ -25,5 +25,27 @@
     </script>
 </div>
 
+<div>
+    <h3>ISO Date and Time</h3>
+
+    <p>Separate date and time with a capital T.</p>
+    <p>Indicate UTC time with a capital Z.</p>
+
+    <p id="dateTime"></p>
+
+    <p>---</p>
+    <p>Modify the time relative to UTC by adding +HH:MM or
+    subtraction -HH:MM to the time.</p>
+
+    <p id="modTime>"></p>
+
+    <script>
+        var d3 = new Date("2015-03-25T12:00:00Z");
+        var d4 = new Date("2015-03-25T12:00:00-06:00");
+
+        document.getElementById("dateTime").innerHTML = d3;
+    </script>
+</div>
+
 </body>
 </html>
