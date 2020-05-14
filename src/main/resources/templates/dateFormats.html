@@ -66,12 +66,19 @@
     <p id="longDate"></p>
     <p id="longDate6"></p>
 
+    <p>---</p>
+    <p>Months can be written long or abbreviated: Jan
+    or January.</p>
+    <p id="longDate7"></p>
+
     <script>
         var d5 = new Date("Mar 25 2015");
         var d6 = new Date("25 Mar 2015");
+        var d7 = new Date("January 25 2015");
 
         document.getElementById("longDate").innerHTML = d5;
         document.getElementById("longDate6").innerHTML = d6;
+        document.getElementById("longDate7").innerHTML = d7;
     </script>
 </div>
 
