@@ -41,9 +41,22 @@
 
     <script>
         var d3 = new Date("2015-03-25T12:00:00Z");
-        var d4 = new Date("2015-03-25T12:00:00-06:00");
 
         document.getElementById("dateTime").innerHTML = d3;
+        document.getElementById("modTime").innerHTML =
+            new Date("2015-03-25T12:00:00-06:00");
+    </script>
+</div>
+
+<div>
+    <h3>JavaScript new Date()</h3>
+
+    <p id="shortDemo"></p>
+
+    <script>
+        var d4 = new Date("03/25/2015");
+
+        document.getElementById("shortDemo").innerHTML = d4;
     </script>
 </div>
 
