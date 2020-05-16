@@ -98,18 +98,18 @@
     <p>Date.parse() returns the number of milliseconds
     between the date and January 1, 1970:</p>
 
-    <p---</p>
+    <p>---</p>
     <p>You can use the return value to convert the string
     to a date object:</p>
 
     <p id="parseDemo"></p>
 
-    <
     <script>
         var msec = Date.parse("March 21, 2012");
+        var msecD = new Date(msec);
 
         document.getElementById("parseDemo").innerHMTL =
-            msec;
+            msecD;
     </script>
 </div>
 
