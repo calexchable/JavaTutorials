@@ -42,11 +42,25 @@
     <p>To get the correct month, you must add 1:</p>
     <p id="monthDemo"></p>
 
+    <p>---</p>
+    <p>THe getMonth() method returns the month
+    as a number:</p>
+    <p>You can use an array to display the name
+    of the month:</p>
+    <p id="monthDemo2"></p>
+
     <script>
+        var months = ["Enero", "Febrero", "Marzo",
+            "Abril", "Mayo", "Junio",
+            "Julio", "Agosto", "Septiembre",
+            "Octubre", "Noviembre", "Diciembre"];
+
         document.getElementById("yearDemo").innerHTML =
             d1.getFullYear();
         document.getElementById("monthDemo").innerHTML =
             d1.getMonth() + 1;
+        document.getElementById("monthDemo2").innerHTML =
+            months[d1.getMonth()];
     </script>
 </div>
 
