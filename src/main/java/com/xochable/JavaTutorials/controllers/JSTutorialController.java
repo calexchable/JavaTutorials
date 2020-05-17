@@ -193,4 +193,11 @@ public class JSTutorialController {
 
         return "dateGetMethods";
     }
+
+    @RequestMapping(value = "dateSetMethods")
+    public String dateSetMethods(Model model) {
+        model.addAttribute("title", "Date Set Methods");
+
+        return "dateSetMethods";
+    }
 }
