@@ -126,9 +126,19 @@
     <p>The getDay() method returns the weekday as a number:</p>
     <p id="dayDemo"></p>
 
+    <p>---</p>
+    <p>You can use an array to display the name of the
+    weekday:</p>
+    <p id="dayNameDemo"></p>
+
     <script>
+        var days = ["Domingo", "Lunes", "Martes",
+            "Miercoles", "Jueves", "Viernes", "Sabado"]
+
         document.getElementById("dayDemo").innerHTML =
             d1.getDay();
+        document.getElementById("dayNameDemo").innerHTML =
+            days[d1.getDay()];
     </script>
 </div>
 
