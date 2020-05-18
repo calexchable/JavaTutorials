@@ -12,7 +12,6 @@
 <h2>JS Date Set Methods</h2>
 
 <div>
-
     <h3>JavaScript setFullYear</h3>
 
     <p>The setFullYear() method sets the year of a date
@@ -53,6 +52,30 @@
         d2.setMonth(11);
 
         document.getElementById("setMonth").innerHTML = d2;
+    </script>
+</div>
+
+<div>
+    <h3>JavaScript setDate()</h3>
+
+    <p>The setDate() method sets the day of a date object:</p>
+
+    <p id="setDateDemo"></p>
+
+    <p>---</p>
+    <p>The setDate() method can be used to add days to a date.</p>
+
+    <p id="setDateDemo2"></p>
+
+    <script>
+        var d3 = new Date();
+        var d4 = new Date();
+
+        d3.setDate(15);
+        d4.setDate(d4.getDate() + 50);
+
+        document.getElementById("setDateDemo").innerHTML= d3;
+        document.getElementById("setDateDemo2").innerHTML = d4;
     </script>
 </div>
 
