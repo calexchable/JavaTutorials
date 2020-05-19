@@ -200,4 +200,11 @@ public class JSTutorialController {
 
         return "dateSetMethods";
     }
+
+    @RequestMapping(value = "math")
+    public String math(Model model) {
+        model.addAttribute("title", "Math");
+
+        return "math";
+    }
 }
