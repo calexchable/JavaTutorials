@@ -207,4 +207,10 @@ public class JSTutorialController {
 
         return "math";
     }
+
+    @RequestMapping(value = "random")
+    public String random(Model model) {
+        model.addAttribute("title", "Random");
+        return "random";
+    }
 }
