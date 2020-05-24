@@ -52,6 +52,11 @@
     integer between 1 and 10 (both included):</p>
     <p id="randomIntDemo5"></p>
 
+    <p>---</p>
+    <p>Math.floor(Math.random() * 100) + 1 returns a random
+    integer between 1 and 100 (both included):</p>
+    <p id="randomIntDemo6"></p>
+
     <script>
         document.getElementById("randomIntDemo").innerHTML =
             Math.floor(Math.random() * 10);
@@ -67,6 +72,9 @@
 
         document.getElementById("randomIntDemo5").innerHTML =
             Math.floor(Math.random() * 10) + 1;
+
+        document.getElementById("randomIntDemo6").innerHTML =
+            Math.floor(Math.random() * 100) + 1;
     </script>
 </div>
 
