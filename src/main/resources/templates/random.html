@@ -30,12 +30,19 @@
 
     <p>Math.floor(Math.random() * 10) returns a random
     integer between 0 and 9 (both included):</p>
-
     <p id="randomIntDemo"></p>
+
+    <p>---</p>
+    <p>Math.floor(Math.random() * 11) returns a random
+    integer between 0 and 10 (both included):</p>
+    <p id="randomIntDemo2"></p>
 
     <script>
         document.getElementById("randomIntDemo").innerHTML =
             Math.floor(Math.random() * 10);
+
+        document.getElementById("randomIntDemo2").innerHTML =
+            Math.floor(Math.random() * 11);
     </script>
 </div>
 
