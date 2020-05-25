@@ -211,6 +211,14 @@ public class JSTutorialController {
     @RequestMapping(value = "random")
     public String random(Model model) {
         model.addAttribute("title", "Random");
+
         return "random";
+    }
+
+    @RequestMapping(value = "booleans")
+    public String booleans(Model model) {
+        model.addAttribute("title", "Booleans");
+
+        return "booleans";
     }
 }
