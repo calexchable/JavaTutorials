@@ -80,6 +80,24 @@
 
 <div>
     <h3>JavaScript Math.random() - Proper Random Function</h3>
+
+    <p>Every time you click the button, getRndInteger(min,
+        max) returns a random number between 0 and 9
+        (both included):</p>
+
+    <button onclick="document.getElementById('ranDemo').innerHTML = getRndInteger(0,10)">
+        click for rando number
+    </button>
+
+    <p id="ranDemo"></p>
+
+    <script>
+        function getRndInteger(min, max) {
+            return Math.floor(Math.random() * (max - min))
+                + min;
+        }
+    </script>
+
 </div>
 
 </body>
