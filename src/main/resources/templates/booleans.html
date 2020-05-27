@@ -76,6 +76,11 @@
     <button onclick="booFunc6()">Try it, Boo</button>
     <p id="booDem6"></p>
 
+    <p>---</p>
+    <p>Display the Boolean value of undefined:</p>
+    <button onclick="booFunc7()">Try it, Boo</button>
+    <p id="booDem7"></p>
+
     <script>
         function booFunc4() {
             var x = 0;
@@ -93,6 +98,12 @@
             var z = "";
             document.getElementById("booDem6").innerHTML =
                 Boolean(z);
+        }
+
+        function booFunc7() {
+            var ax;
+            document.getElementById("booDem7").innerHTML =
+                Boolean(ax);
         }
     </script>
 </div>
