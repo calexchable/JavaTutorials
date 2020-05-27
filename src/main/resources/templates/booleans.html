@@ -152,10 +152,12 @@
     <p>Comparing different boolean objects.</p>
     <p id="booOb1"></p>
     <p id="booOb2"></p>
+    <p id="booOb3"></p>
 
     <script>
         var cx = false;
         var cy = new Boolean(false);
+        var cz = new Boolean(false);
 
         document.getElementById("obBoo").innerHTML =
             typeof cx + "<br>" + typeof cy;
@@ -165,6 +167,9 @@
 
         document.getElementById("booOb2").innerHTML =
             (cx===cy);
+
+        document.getElementById("booOb3").innerHTML =
+            (cy == cz);
     </script>
 </div>
 
