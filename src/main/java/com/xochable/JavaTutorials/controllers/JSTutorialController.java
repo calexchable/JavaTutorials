@@ -221,4 +221,11 @@ public class JSTutorialController {
 
         return "booleans";
     }
+
+    @RequestMapping(value = "comparisons")
+    public String comparisons(Model model) {
+        model.addAttribute("title", "Comparisons");
+
+        return "comparisons";
+    }
 }
