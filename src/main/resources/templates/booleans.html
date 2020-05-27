@@ -64,13 +64,17 @@
 
     <p>Display the Boolean value of 0:</p>
     <button onclick="booFunc4()">Try it, Boo</button>
-
     <p id="booDem4"></p>
 
     <p>---</p>
     <p>Display the Boolean value of -0:</p>
     <button onclick="booFunc5()">Try it, Boo</button>
     <p id="booDem5"></p>
+
+    <p>---</p>
+    <p>Display the Boolean value of "":</p>
+    <button onclick="booFunc6()">Try it, Boo</button>
+    <p id="booDem6"></p>
 
     <script>
         function booFunc4() {
@@ -83,6 +87,12 @@
             var y = -0;
             document.getElementById("booDem5").innerHTML =
                 Boolean(y);
+        }
+
+        function booFunc6() {
+            var z = "";
+            document.getElementById("booDem6").innerHTML =
+                Boolean(z);
         }
     </script>
 </div>
