@@ -14,30 +14,30 @@
 <div>
     <h3>JavaScript Comparison</h3>
 
-    <h2><storng>= =</storng></h2>
+    <h2><strong>= =</strong></h2>
     <p>Assign 5 to x and display the value of the
-    comparison (x==8):</p>
+        comparison (x==8):</p>
     <p id="compDemo1"></p>
 
     <p>---</p>
     <p>...display the value of the comparison
-    (x == 5):</p>
+        (x == 5):</p>
     <p id="compDemo2"></p>
 
     <p>---</p>
     <p>...display the value of the comparison
-    (x == "5");</p>
+        (x == "5");</p>
     <p id="compDemo3"></p>
 
     <h2><strong>= = =</strong></h2>
 
     <p>Assign 5 to x, and display the value of the
-    comparison (x === 5):</p>
+        comparison (x === 5):</p>
     <p id="compDemo4"></p>
 
     <p>---</p>
     <p>...display the value of the comparison
-    (x === "5"):</p>
+        (x === "5"):</p>
     <p id="compDemo5"></p>
 
     <h2><strong>! =</strong></h2>
@@ -47,6 +47,13 @@
     <p id="compDemo6"></p>
 
     <h2><strong>! = = </strong></h2>
+    <p>Assign 5 to x, and display the value of the
+        comparison (x !== 5):</p>
+    <p id="compDemo7"></p>
+
+    <p>... display the value of the comparison
+        (x !=== "5");</p>
+    <p id="compDemo8"></p>
 
     <script>
         var x = 5;
@@ -68,6 +75,12 @@
 
         document.getElementById("compDemo6").innerHTML =
             (x != 8);
+
+        document.getElementById("compDemo7").innerHTML =
+            (x !== 5);
+
+        document.getElementById("compDemo8").innerHTML =
+            (x !== "5");
     </script>
 </div>
 
