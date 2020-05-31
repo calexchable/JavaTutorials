@@ -228,4 +228,11 @@ public class JSTutorialController {
 
         return "comparisons";
     }
+
+    @RequestMapping(value = "conditions")
+    public String conditions(Model model) {
+        model.addAttribute("title", "Conditions");
+
+        return "conditions";
+    }
 }
