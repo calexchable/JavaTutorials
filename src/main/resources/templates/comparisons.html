@@ -248,5 +248,32 @@
     </script>
 </div>
 
+<div>
+    <h3>JavaScript Comparisons</h3>
+
+    <p>Input your age and click the button:</p>
+
+    <input id="age2" value="18" />
+
+    <button onclick="ageVerify()">Try it</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function ageVerify() {
+        var age, voting;
+
+        age = Number(document.getElementById("age2").value);
+
+        if (isNaN(age)) {
+            voting = "Input is not a number";
+            } else {
+            voting = (age < 18) ? "Too Young" : "Old Enough";
+            }
+            document.getElementById("demo").innerHTML = voting;
+        }
+</script>
+</div>
+
 </body>
 </html>
