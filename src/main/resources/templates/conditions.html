@@ -11,6 +11,19 @@
 
 <h2>JavaScript Conditions</h2>
 
+<div>
+    <h3>Conditional - if</h3>
+
+    <p>Display "Good Day!" if the hour is less than 18:00:</p>
+    <p id="gdDemo">Good Evening!</p>
+
+    <script>
+        if (new Date().getHours() < 18) {
+            document.getElementById("gdDemo").innerHTML =
+                "Good Day!";
+        }
+    </script>
+</div>
 
 </body>
 </html>
