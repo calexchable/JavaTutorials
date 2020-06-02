@@ -25,5 +25,28 @@
     </script>
 </div>
 
+<div>
+    <h3>Conditional - if / else</h3>
+
+    <p>Click the button to display a time-based greeting:</p>
+    <button onclick="goodDayFunc()">Try It</button>
+    <p id="goodDayDemo"></p>
+
+    <script>
+        function goodDayFunc() {
+            var hour = new Date().getHours();
+            var greeting;
+
+            if (hour < 18) {
+                greeting = "Good Day";
+            } else {
+                greeting = "Good Evening";
+            }
+            document.getElementById("goodDayDemo").innerHTML =
+                greeting;
+        }
+    </script>
+</div>
+
 </body>
 </html>
