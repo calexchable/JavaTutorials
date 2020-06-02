@@ -236,7 +236,7 @@ public class JSTutorialController {
         return "conditions";
     }
 
-    @RequestMapping(value = "switchJavaScript")
+    @RequestMapping(value = "switch")
     public String switchJavaScript(Model model) {
         model.addAttribute("title", "Switch");
 
