@@ -11,5 +11,41 @@
 
 <h2>JavaScript Switch</h2>
 
+<div>
+    <h3>Days of the Week Switch</h3>
+
+    <p id="diaDeLaSemana"></p>
+
+    <script>
+        var dia;
+
+        switch (new Date().getDay()) {
+            case 0:
+                dia = "Domingo";
+                break;
+            case 1:
+                dia = "Lunes";
+                break;
+            case 2:
+                dia = "Martes";
+                break;
+            case 3:
+                dia = "Miercoles";
+                break;
+            case 4:
+                dia = "Jueves";
+                break;
+            case 5:
+                dia = "Viernes";
+                break;
+            case 6:
+                dia = "Sabado";
+        }
+
+        document.getElementById("diaDeLaSemana").innerHTML =
+            "Hoy es " + dia + ".";
+    </script>
+</div>
+
 </body>
 </html>
