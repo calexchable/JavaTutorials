@@ -242,4 +242,11 @@ public class JSTutorialController {
 
         return "switch";
     }
+
+    @RequestMapping(value = "loopFor")
+    public String loopFor(Model model) {
+        model.addAttribute("title", "For Loop");
+
+        return "loopFor";
+    }
 }
