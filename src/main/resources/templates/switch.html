@@ -122,5 +122,30 @@
     </script>
 </div>
 
+<div>
+    <h3>Strict Comparisons</h3>
+
+    <p>Values must be the same types.</p>
+    <p id="binaryDemo"></p>
+
+    <script>
+        var resp;
+        var x = "0";
+
+        switch (x) {
+            case 0:
+                resp = "Off";
+                break;
+            case 1:
+                resp = "On";
+                break;
+            default:
+                resp = "No value found";
+        }
+        document.getElementById("binaryDemo").innerHTML =
+            resp;
+    </script>
+</div>
+
 </body>
 </html>
