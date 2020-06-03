@@ -97,5 +97,30 @@
     </script>
 </div>
 
+<div>
+    <h3>Common Code Blocks</h3>
+
+    <p>You can use multiple cases with the same code block</p>
+    <p id="commonBlocks"></p>
+    <script>
+        var weekText;
+
+        switch (new Date().getDay()) {
+            case 4:
+            case 5:
+                weekText = "The weekend is soon upon us.";
+                break;
+            case 6:
+            case 0:
+                weekText = "The weekend is now!";
+                break;
+            default:
+                weekText = "When shall the weekend be upon us?";
+        }
+        document.getElementById("commonBlocks").innerHTML =
+            weekText;
+    </script>
+</div>
+
 </body>
 </html>
