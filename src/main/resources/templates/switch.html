@@ -47,5 +47,29 @@
     </script>
 </div>
 
+<div>
+    <h3>The default keyword</h3>
+
+    <p id="defaultDemo"></p>
+
+    <script>
+        var texto;
+
+        switch (new Date().getDay()) {
+            case 6:
+                texto = "Hoje e Sabado";
+                break;
+            case 0:
+                texto = "Hoje e Domingo";
+                break;
+            default:
+                texto = "Tou esperando o fim da semana.";
+        }
+        
+        document.getElementById("defaultDemo").innerHTML =
+            texto;
+    </script>
+</div>
+
 </body>
 </html>
