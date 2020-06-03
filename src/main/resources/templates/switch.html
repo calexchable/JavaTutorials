@@ -65,9 +65,35 @@
             default:
                 texto = "Tou esperando o fim da semana.";
         }
-        
+
         document.getElementById("defaultDemo").innerHTML =
             texto;
+    </script>
+</div>
+
+<div>
+    <h3>The default keyword</h3>
+
+    <p>The default case does not have to be at the end.</p>
+
+    <p id="defaultMaya"></p>
+
+    <script>
+        var teextoil;
+
+        switch (new Date().getDay()) {
+            default:
+                teextoil = "Ba'axten Bejla'e' ma' u xuulil semaana?";
+                break;
+            case 6:
+                teextoil = "Bejla'e', Saabado k'iin";
+                break;
+            case 0:
+                teextoil = "Bejla'e', Domiingo k'iin";
+        }
+
+        document.getElementById("defaultMaya").innerHTML =
+            teextoil;
     </script>
 </div>
 
