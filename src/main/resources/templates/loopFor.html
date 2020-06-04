@@ -49,5 +49,27 @@
             loopText;
     </script>
 </div>
+
+<div>
+    <h3>Optional first statement</h3>
+
+    <p id="stateOne"></p>
+
+    <script>
+        var cars2 = ["BMW",
+            "Volvo",
+            "Saab",
+            "Ford"];
+        var i, len, text;
+
+        for (i = 1, len = cars2.length, text = "";
+            i < len;
+            i++) {
+                text += cars2[i] + "<br>";
+            }
+
+        document.getElementById("stateOne").innerHTML = text;
+    </script>
+</div>
 </body>
 </html>
