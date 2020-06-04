@@ -32,5 +32,22 @@
         document.getElementById("carLoop").innerHTML = text
     </script>
 </div>
+
+<div>
+    <h3>The For Loop</h3>
+
+    <p id="forLoopExample"></p>
+
+    <script>
+        var loopText = "";
+        var ii;
+
+        for (ii = 4; ii < 9; ii++) {
+            loopText += "The number is " + ii + "<br>";
+        }
+        document.getElementById("forLoopExample").innerHTML =
+            loopText;
+    </script>
+</div>
 </body>
 </html>
