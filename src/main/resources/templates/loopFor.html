@@ -10,5 +10,27 @@
 </form>
 
 <h2>JavaScript For Loops</h2>
+
+<div>
+    <h3>For Loops run for each element in the array</h3>
+
+    <p id="carLoop"></p>
+
+    <script>
+        var cars = ["BMW",
+            "Volvo",
+            "Saab",
+            "Ford",
+            "Fiat",
+            "Audi"];
+        var text = "";
+        var i;
+
+        for (i=0; i < cars.length; i++) {
+            text += cars[i] + "<br>";
+        }
+        document.getElementById("carLoop").innerHTML = text
+    </script>
+</div>
 </body>
 </html>
