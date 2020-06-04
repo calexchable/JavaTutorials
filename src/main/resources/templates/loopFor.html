@@ -71,5 +71,31 @@
         document.getElementById("stateOne").innerHTML = text;
     </script>
 </div>
+
+<div>
+    <h3>Alternate first Statement</h3>
+
+    <p>This example I've defined the variables first</p>
+
+    <p id="stateOne2"></p>
+
+    <script>
+        var cars3 = ["BMW",
+            "Volvo",
+            "Saab",
+            "Ford",
+            "Fiat",
+            "Audi"];
+        var i = 2;
+        var len = cars.length;
+        var text = "";
+
+        for (; i < len; i++) {
+            text += cars3[i] + "<br>";
+        }
+        document.getElementById("stateOne2").innerHTML =
+            text;
+    </script>
+</div>
 </body>
 </html>
