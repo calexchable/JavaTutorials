@@ -249,4 +249,11 @@ public class JSTutorialController {
 
         return "loopFor";
     }
+
+    @RequestMapping(value = "loopWhile")
+    public String loopWhile(Model model) {
+        model.addAttribute("title", "While Loop");
+
+        return "loopWhile";
+    }
 }
