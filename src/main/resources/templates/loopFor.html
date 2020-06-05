@@ -133,5 +133,26 @@
     </script>
 </div>
 
+<div>
+    <h3>JavaScript For/In Loop</h3>
+
+    <p>The for/in statement loops through the properties of
+    and object.</p>
+
+    <p id="forInLoop"></p>
+
+    <script>
+        var txt = "";
+        var person = {fname: "John", lname: "Doe", age: 25};
+        var x;
+
+        for (x in person) {
+            txt += person[x] + " ";
+        }
+        document.getElementById("forInLoop").innerHTML =
+            txt;
+    </script>
+</div>
+
 </body>
 </html>
