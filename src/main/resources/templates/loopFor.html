@@ -110,7 +110,27 @@
 </div>
 
 <div>
-    <h3></h3>
+    <h3>For Loops - Statement 3</h3>
+
+    <p>can be omitted like when increment your values
+    inside of the loop.</p>
+
+    <p id="state3Op"></p>
+
+    <script>
+
+        var i = 0;
+        var len = cars3.length;
+        var text = "";
+
+        for (; i < len; ) {
+            text += cars3[i] + "<br>";
+            i++;
+        }
+
+        document.getElementById("state3Op").innerHTML =
+            text;
+    </script>
 </div>
 
 </body>
