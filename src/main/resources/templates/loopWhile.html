@@ -74,10 +74,30 @@
             text += cars[i] + "<br>";
             i++;
         }
+
         document.getElementById("loopDemo1").innerHTML =
             text;
     </script>
+</div>
 
+<div>
+    <h3>Comparing For and While Loops</h3>
+    <p> this is written with a while loop!</p>
+
+    <p id="loopDemo2"></p>
+
+    <script>
+        var cars = ["BMW", "Volvo", "Saab", "Ford"];
+        var i = 0;
+        var text = "";
+
+        while (cars[i]) {
+            text += cars[i] + "<br>";
+            i++;
+        }
+        document.getElementById("loopDemo2").innerHTML =
+            text;
+    </script>
 </div>
 </body>
 </html>
