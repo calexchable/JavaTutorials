@@ -9,7 +9,20 @@
     <div><a href="/">Return to Index</a></div>
 </form>
 
-<h2>JavaScript For Loops</h2>
+<h2>JavaScript While Loops</h2>
 
+<p id="whileLoop1"></p>
+
+<script>
+    var text = "";
+    var i = 0;
+
+    while (i < 15) {
+        text += "<br>The Number is " + i;
+        i++;
+    }
+    document.getElementById("whileLoop1").innerHTML =
+        text;
+</script>
 </body>
 </html>
