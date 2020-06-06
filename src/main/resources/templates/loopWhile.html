@@ -33,11 +33,13 @@
     loop as long as the condition is true.</p>
 
     <p id="doWhileLoop"></p>
-
+    <p id="doWhileLoopAlt"></p>
 
     <script>
         var text = "";
+        var textAlt = "alt";
         var i = 0;
+        var ii = 75;
 
         do {
             text += "<br>The number is " + i;
@@ -46,8 +48,16 @@
 
         while (i < 10);
 
+        do {
+            textAlt += "<br>The number is " + ii;
+            ii++;
+        }
+        while (ii < 10);
+
         document.getElementById("doWhileLoop").innerHTML =
             text;
+        document.getElementById("doWhileLoopAlt").innerHTML =
+            textAlt;
     </script>
 <div>
 
