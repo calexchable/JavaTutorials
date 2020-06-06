@@ -61,6 +61,23 @@
     </script>
 <div>
 
+    <h3>Comparing For and While Loops</h3>
+
+    <p id="loopDemo1"></p>
+
+    <script>
+        var cars = ["BMW", "Volvo", "Saab", "Ford"];
+        var i = 0;
+        var text = "";
+
+        for (; cars[i];) {
+            text += cars[i] + "<br>";
+            i++;
+        }
+        document.getElementById("loopDemo1").innerHTML =
+            text;
+    </script>
+
 </div>
 </body>
 </html>
