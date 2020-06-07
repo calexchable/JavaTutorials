@@ -256,4 +256,11 @@ public class JSTutorialController {
 
         return "loopWhile";
     }
+
+    @RequestMapping(value = "break")
+    public String breakCont(Model model) {
+        model.addAttribute("title", "Break");
+
+        return "break";
+    }
 }
