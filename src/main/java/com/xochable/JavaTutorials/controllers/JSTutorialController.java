@@ -263,4 +263,11 @@ public class JSTutorialController {
 
         return "break";
     }
+
+    @RequestMapping(value = "typeConversion")
+    public String typeConversion(Model model) {
+        model.addAttribute("title", "Type Conversions");
+
+        return "typeConv";
+    }
 }
