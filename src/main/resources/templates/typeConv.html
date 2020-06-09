@@ -54,5 +54,24 @@
     </script>
 </div>
 
+<div>
+    <h3>JavaScript Arrays</h3>
+
+    <p>This "home made" isArray() function returns true
+    when used on an array:</p>
+
+    <p id="constructDemo2"></p>
+
+    <script>
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+        document.getElementById("constructDemo2").innerHTML =
+            isArray(fruits);
+
+        function isArray(myArray) {
+            return myArray.constructor.toString().indexOf("Array") > -1;
+        }
+    </script>
+</div>
 </body>
 </html>
