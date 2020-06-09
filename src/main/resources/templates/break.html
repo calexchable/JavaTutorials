@@ -32,5 +32,26 @@
     </script>
 </div>
 
+<div>
+    <h3>JavaScript Loops - continue statment</h3>
+
+    <p>A loop with a <b>continue</b> statement.</p>
+    <p>A loop which skips the step where i = 3.</p>
+
+    <p id="contDemo"></p>
+
+    <script>
+        var text = "";
+        var i;
+
+        for (i = 0; i < 10; i++) {
+            if (i === 3) { continue; }
+            text += "the number is " + i + "<br>";
+        }
+        document.getElementById("contDemo").innerHTML =
+            text;
+    </script>
+</div>
+
 </body>
 </html>
