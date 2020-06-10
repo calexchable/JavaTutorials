@@ -73,5 +73,26 @@
         }
     </script>
 </div>
+
+<div>
+    <h3>JavaScript Array Object</h3>
+
+    <p>This "home made" isArray() function returns true when used
+    on an array:</p>
+
+    <p id="constructDemo3"></p>
+
+    <script>
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+        document.getElementById("constructDemo3").innerHTML =
+            isArray2(fruits);
+
+        function isArray2(myArray) {
+            return myArray.constructor === Array;
+        }
+    </script>
+</div>
+
 </body>
 </html>
