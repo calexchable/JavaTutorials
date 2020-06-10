@@ -94,5 +94,23 @@
     </script>
 </div>
 
+<div>
+    <h3>JavaScript Date Object</h3>
+
+    <p>This function returns true when used on a day:</p>
+
+    <p id="constructDemo4"></p>
+
+    <script>
+        var myDate = new Date();
+
+        document.getElementById("constructDemo4").innerHTML =
+            isDate(myDate);
+
+        function isDate(myDate) {
+            return myDate.constructor.toString().indexOf("Date") > -1;
+        }
+    </script>
+</div>
 </body>
 </html>
