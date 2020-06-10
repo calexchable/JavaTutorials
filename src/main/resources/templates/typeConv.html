@@ -98,8 +98,10 @@
     <h3>JavaScript Date Object</h3>
 
     <p>This function returns true when used on a day:</p>
-
     <p id="constructDemo4"></p>
+
+    <p>or simpler with function here:</p>
+    <p id="constructDemo5"></p>
 
     <script>
         var myDate = new Date();
@@ -107,8 +109,15 @@
         document.getElementById("constructDemo4").innerHTML =
             isDate(myDate);
 
+        document.getElementById("constructDemo5").innerHTML =
+            isDate2(myDate);
+
         function isDate(myDate) {
             return myDate.constructor.toString().indexOf("Date") > -1;
+        }
+
+        function isDate2(myDate) {
+            return myDate.constructor === Date;
         }
     </script>
 </div>
