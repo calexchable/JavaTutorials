@@ -164,6 +164,7 @@
     <h3>The JavaScript typeof Operator</h3>
 
     <p>The typeof operator returns the type of a variable or expression.</p>
+    <p>If the expression cannot be converted it returns NaN.</p>
 
     <button onclick="typeofFunc()">Try this!</button>
 
@@ -171,12 +172,16 @@
 
     <script>
         function typeofFunc() {
+            var z = "John";
             var y = "5";
             var x = + y;
+            var x2 = + z;
 
             document.getElementById("typeofDemo2").innerHTML =
                 typeof y + "<br>" +
-                typeof x;
+                typeof x + "<br>" +
+                typeof z + "<br>" +
+                typeof x2;
         }
     </script>
 
