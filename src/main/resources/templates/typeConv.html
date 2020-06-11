@@ -161,6 +161,25 @@
 
 <div>
     <h3>The Unary + Operator</h3>
+    <h3>The JavaScript typeof Operator</h3>
+
+    <p>The typeof operator returns the type of a variable or expression.</p>
+
+    <button onclick="typeofFunc()">Try this!</button>
+
+    <p id="typeofDemo2"></p>
+
+    <script>
+        function typeofFunc() {
+            var y = "5";
+            var x = + y;
+
+            document.getElementById("typeofDemo2").innerHTML =
+                typeof y + "<br>" +
+                typeof x;
+        }
+    </script>
+
 </div>
 
 </body>
