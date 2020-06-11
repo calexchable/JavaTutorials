@@ -184,7 +184,28 @@
                 typeof x2;
         }
     </script>
+</div>
 
+<div>
+    <h3>Automatic Type Conversion</h3>
+
+    <p>When JavaScript tries to operate on a "wrong" data type, it will try to
+    convert the value to a "right" type.</p>
+    <p>The results are not always what you expect.</p>
+
+    <p id="autoConvert"></p>
+
+    <script>
+        var x = [];
+
+        document.getElementById("autoConvert").innerHTML =
+            (5 + null) + "<br>" +
+            ("5" + null) + "<br>" +
+            ("5" + 2) + "<br>" +
+            ("5" - 2) + "<br>" +
+            ("5" * "2") + "<br>" +
+            ("5" / "2");
+    </script>
 </div>
 
 </body>
