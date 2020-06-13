@@ -270,4 +270,11 @@ public class JSTutorialController {
 
         return "typeConv";
     }
+
+    @RequestMapping(value = "bitwise")
+    public String bitwise(Model model) {
+        model.addAttribute("title", "Bitwise");
+
+        return "bitwise";
+    }
 }
