@@ -277,4 +277,11 @@ public class JSTutorialController {
 
         return "bitwise";
     }
+
+    @RequestMapping(value = "regExp")
+    public String regexp(Model model) {
+        model.addAttribute("title", "Regular Expressions");
+
+        return "RegExp";
+    }
 }
