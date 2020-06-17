@@ -38,14 +38,19 @@
 
     <p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
     <p id="replaceDemo1">Please visit Microsoft!</p>
+    <p id="replaceDemo2">Please visit Microsoft and Microsoft!</p>
 
-    <button onclick="repFunc()">Replace the Biz!</button>
+    <button onclick="repFunc()">Replace that Biz!</button>
 
     <script>
         function repFunc() {
             var str1 = document.getElementById("replaceDemo1").innerHTML;
             var txt1 = str1.replace("Microsoft", "W3Schools");
             document.getElementById("replaceDemo1").innerHTML = txt1;
+
+            var str2 = document.getElementById("replaceDemo2").innerHTML;
+            var txt2 = str2.replace(/microsoft/i, "W3Schools");
+            document.getElementById("replaceDemo2").innerHTML = txt2;
         }
     </script>
 </div>
