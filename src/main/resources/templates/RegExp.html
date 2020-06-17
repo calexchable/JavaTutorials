@@ -12,13 +12,14 @@
 <h2>JavaScript Regular Expressions</h2>
 
 <div>
-    <h3>JavaScript String Methods</h3>
+    <h3>JavaScript Search Methods</h3>
 
     <p>Search a string for "W3Schools", and display the position of
     the match:</p>
     <p id="searchString1"></p>
 
-    <p>The following example uses code to make search case insensitive:</p>
+    <p>The following example uses code to make search case insensitive
+        using a regular expression:</p>
     <p id="searchString2"></p>
 
     <script>
@@ -29,6 +30,23 @@
 
         document.getElementById("searchString1").innerHTML = n;
         document.getElementById("searchString2").innerHTML = o;
+    </script>
+</div>
+
+<div>
+    <h3>JavaScript Replace Methods</h3>
+
+    <p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+    <p id="replaceDemo1">Please visit Microsoft!</p>
+
+    <button onclick="repFunc()">Replace the Biz!</button>
+
+    <script>
+        function repFunc() {
+            var str1 = document.getElementById("replaceDemo1").innerHTML;
+            var txt1 = str1.replace("Microsoft", "W3Schools");
+            document.getElementById("replaceDemo1").innerHTML = txt1;
+        }
     </script>
 </div>
 </body>
