@@ -16,13 +16,19 @@
 
     <p>Search a string for "W3Schools", and display the position of
     the match:</p>
+    <p id="searchString1"></p>
 
-    <p id="searchString"></p>
+    <p>The following example uses code to make search case insensitive:</p>
+    <p id="searchString2"></p>
 
     <script>
         var str = "Visit W3Schools!";
+
         var n = str.search("W3Schools");
-        document.getElementById("searchString").innerHTML = n;
+        var o = str.search(/w3Schools/i);
+
+        document.getElementById("searchString1").innerHTML = n;
+        document.getElementById("searchString2").innerHTML = o;
     </script>
 </div>
 </body>
