@@ -63,13 +63,25 @@
     <button onclick="insensitive()">CLICK</button>
     <p id="caseInsens"></p>
 
+    <p>Click the button to do a global search for "is" in a string.</p>
+    <button onclick="global()">CLICK</button>
+    <p id="globalSearch"></p>
+
     <script>
         function insensitive() {
             var str = "Visit W3Schools";
             var patt1 =  /w3schools/i;
-            var result1 = str.match(patt1);
+            var result = str.match(patt1);
 
-            document.getElementById("caseInsens").innerHTML = result1;
+            document.getElementById("caseInsens").innerHTML = result;
+        }
+
+        function global() {
+            var str = "Is this all there is?";
+            var patt1 = /is/g;
+            var result = str.match(patt1);
+
+            document.getElementById("globalSearch").innerHTML = result;
         }
     </script>
 </div>
