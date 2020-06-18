@@ -54,5 +54,24 @@
         }
     </script>
 </div>
+
+<div>
+    <h3>Regular Expression Modifiers</h3>
+
+    <p>Click the button to do a case-insensitive search for "w3schools"
+    in a string.</p>
+    <button onclick="insensitive()">CLICK</button>
+    <p id="caseInsens"></p>
+
+    <script>
+        function insensitive() {
+            var str = "Visit W3Schools";
+            var patt1 =  /w3schools/i;
+            var result1 = str.match(patt1);
+
+            document.getElementById("caseInsens").innerHTML = result1;
+        }
+    </script>
+</div>
 </body>
 </html>
