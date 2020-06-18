@@ -67,6 +67,11 @@
     <button onclick="global()">CLICK</button>
     <p id="globalSearch"></p>
 
+    <p>Click the button to do a multiline search for "is" at the
+    beginning of each line in a string.</p>
+    <button onclick="multiLine()">CLICK</button>
+    <p id="multiLineSearch"></p>
+
     <script>
         function insensitive() {
             var str = "Visit W3Schools";
@@ -82,6 +87,14 @@
             var result = str.match(patt1);
 
             document.getElementById("globalSearch").innerHTML = result;
+        }
+
+        function multiLine() {
+            var str = "\nIs thi\nis it?";
+            var patt1 = /^is/m;
+            var result = str.match(patt1);
+
+            document.getElementById("multiLineSearch").innerHTML = result;
         }
     </script>
 </div>
