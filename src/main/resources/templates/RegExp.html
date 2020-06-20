@@ -98,5 +98,24 @@
         }
     </script>
 </div>
+
+<div>
+    <h3>Regular Expression Patters - Brackets</h3>
+
+    <p>Click the button to do a global search for the character
+    "h" in a string.</p>
+    <button onclick="theH()">What the H?</button>
+    <p id="hFind"></p>
+
+    <script>
+        function theH() {
+            var str = "Is this all there is?";
+            var patt1 = /[h]/g;
+            var result = str.match(patt1);
+
+            document.getElementById("hFind").innerHTML = result;
+        }
+    </script>
+</div>
 </body>
 </html>
