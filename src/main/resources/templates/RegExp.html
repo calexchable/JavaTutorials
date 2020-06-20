@@ -107,6 +107,11 @@
     <button onclick="theH()">What the H?</button>
     <p id="hFind"></p>
 
+    <p>Click the button to do a global search for the numbers 1
+    to 4 in a string.</p>
+    <button onclick="findNums()">Find some numbers!</button>
+    <p id="numbFind"></p>
+
     <script>
         function theH() {
             var str = "Is this all there is?";
@@ -114,6 +119,14 @@
             var result = str.match(patt1);
 
             document.getElementById("hFind").innerHTML = result;
+        }
+
+        function findNums() {
+            var str = "123456789";
+            var patt1 = /[1-4]/g;
+            var result = str.match(patt1);
+
+            document.getElementById("numbFind").innerHTML = result;
         }
     </script>
 </div>
