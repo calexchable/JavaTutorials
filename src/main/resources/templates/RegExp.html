@@ -112,6 +112,11 @@
     <button onclick="findNums()">Find some numbers!</button>
     <p id="numbFind"></p>
 
+    <p>Click the button to do a global search for any of the
+    specified alternatives (red|green).</p>
+    <button onclick="redGreenFind()">Find Red Green</button>
+    <p id="redGreens"></p>
+
     <script>
         function theH() {
             var str = "Is this all there is?";
@@ -127,6 +132,14 @@
             var result = str.match(patt1);
 
             document.getElementById("numbFind").innerHTML = result;
+        }
+
+        function redGreenFind() {
+            var str = "re, green, red, green, gren, gr, blue, yellow";
+            var patt1 = /(red|green)/g;
+            var result = str.match(patt1);
+
+            document.getElementById("redGreens").innerHTML = result;
         }
     </script>
 </div>
