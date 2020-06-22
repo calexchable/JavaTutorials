@@ -209,7 +209,26 @@
         document.getElementById("loLook").innerHTML = result1;
         document.getElementById("loLookEnd").innerHTML =result2;
     </script>
-
 </div>
+
+<div>
+    <h3>Regular Expressions - metacharacters, hexadecimal</h3>
+
+    <p>Click the button to do a global search for the
+    hexadecimal number 0057 (W) in a string.</p>
+    <button onclick="wFinder()">Find 0057</button>
+    <p id="wDemo"></p>
+
+    <script>
+        function wFinder() {
+            var str = "Visit W3Schools. Hello World! Wow.";
+            var patt1 = /\u0057/g;
+            var result = str.match(patt1);
+
+            document.getElementById("wDemo").innerHTML = result;
+        }
+    </script>
+</div>
+
 </body>
 </html>
