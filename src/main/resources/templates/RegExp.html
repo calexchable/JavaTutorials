@@ -238,6 +238,11 @@
     <button onclick="oFinder()">Find O</button>
     <p id="foundO"></p>
 
+    <p>Click the button to do a global search for an "l", followed
+    by zero or more "o" characters.</p>
+    <button onclick="loFinder()">Find LO</button>
+    <p id="foundLO"></p>
+
     <script>
         function oFinder() {
             var str = "Helloooo World! Hello W3Schools!";
@@ -245,6 +250,14 @@
             var result = str.match(patt1);
 
             document.getElementById("foundO").innerHTML = result;
+        }
+
+        function loFinder() {
+            var str = "Helloooo World! Hello W3Schools!";
+            var patt1 = /lo*/g;
+            var result = str.match(patt1);
+
+            document.getElementById("foundLO").innerHTML = result;
         }
     </script>
 </div>
