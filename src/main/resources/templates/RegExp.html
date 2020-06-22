@@ -175,5 +175,28 @@
         }
     </script>
 </div>
+
+<div>
+    <h3>Regular Expression Patterns - Metacharacters</h3>
+
+    <p>
+        Search fro the Characters<br>
+        "LO"<br>
+        at the <strong>beginning</strong> of a word in the
+        phrase:<br>
+        "HELLO, LOOK AT YOU!"
+    </p>
+
+    <p>Found in position: <span id="loLook"></span></p>
+
+    <script>
+        var str = "HELLO, LOOK AT YOU!";
+        var patt1 = /\bLO/;
+        var result1 = str.search(patt1);
+
+        document.getElementById("loLook").innerHTML = result1;
+    </script>
+
+</div>
 </body>
 </html>
