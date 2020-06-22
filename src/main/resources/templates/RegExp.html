@@ -261,5 +261,27 @@
         }
     </script>
 </div>
+
+<div>
+    <h3>Regular Expressions - quantifiers n?</h3>
+
+    <p>Click the button to do a global search for a "1", followed
+        by zero or one "0" characters.</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo10"></p>
+
+    <script>
+        function myFunction() {
+            var str = "1, 100 or 1000?";
+            var patt1 = /10?/g;
+            var result = str.match(patt1);
+
+            document.getElementById("demo10").innerHTML = result;
+        }
+    </script>
+</div>
+
 </body>
 </html>
