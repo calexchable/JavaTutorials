@@ -186,15 +186,28 @@
         phrase:<br>
         "HELLO, LOOK AT YOU!"
     </p>
-
     <p>Found in position: <span id="loLook"></span></p>
 
+    <p>
+        <strong>NOW</strong><br>
+        Search fro the Characters<br>
+        "LO"<br>
+        at the <strong>end</strong> of a word in the
+        phrase:<br>
+        "HELLO, LOOK AT YOU!"
+    </p>
+    <p>Found in position: <span id="loLookEnd"></span></p>
     <script>
         var str = "HELLO, LOOK AT YOU!";
+
         var patt1 = /\bLO/;
+        var patt2 = /LO\b/;
+
         var result1 = str.search(patt1);
+        var result2 = str.search(patt2);
 
         document.getElementById("loLook").innerHTML = result1;
+        document.getElementById("loLookEnd").innerHTML =result2;
     </script>
 
 </div>
