@@ -152,6 +152,11 @@
     <button onclick="digitFinder()">Find the Digits</button>
     <p id="foundDigits"></p>
 
+    <p>Click the button to do a global search for white space
+    characters in a string.</p>
+    <button onclick="whiteSpaceFinder()">Find the White</button>
+    <p id="foundWhiteSpace"></p>
+
     <script>
         function digitFinder() {
             var str = "Give 100%!";
@@ -159,6 +164,14 @@
             var result = str.match(patt1);
 
             document.getElementById("foundDigits").innerHTML = result;
+        }
+
+        function whiteSpaceFinder() {
+            var str = "Is this all there is?";
+            var patt1 = /\s/g;
+            var result = str.match(patt1);
+
+            document.getElementById("foundWhiteSpace").innerHTML = result;
         }
     </script>
 </div>
