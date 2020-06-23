@@ -283,5 +283,20 @@
     </script>
 </div>
 
+<div>
+    <h3>Regular Expressions - Using the RegExp Object</h3>
+
+    <p>Search for an "e" in the next paragraph:</p>
+    <p id="p01">The best things in life are free!</p>
+    <p id="testDemo01"></p>
+
+    <script>
+        text = document.getElementById("p01").innerHTML;
+        document.getElementById("testDemo01").innerHTML =
+            /e/.test(text);
+    </script>
+
+</div>
+
 </body>
 </html>
