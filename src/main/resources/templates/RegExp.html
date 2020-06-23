@@ -285,6 +285,7 @@
 
 <div>
     <h3>Regular Expressions - Using the RegExp Object</h3>
+    <h4>Using test()</h4>
 
     <p>Search for an "e" in the next paragraph:</p>
     <p id="p01">The best things in life are free!</p>
@@ -292,11 +293,27 @@
 
     <script>
         text = document.getElementById("p01").innerHTML;
+
         document.getElementById("testDemo01").innerHTML =
             /e/.test(text);
     </script>
 
 </div>
 
+<div>
+    <h3>Regular Expressions - Using the RegExp Object</h3>
+    <h4>Using exec()</h4>
+
+    <p id="execDemo"></p>
+
+    <script>
+        var obj = /e/.exec("The best things in life aren't things!");
+
+        document.getElementById("execDemo").innerHTML =
+            "Found: '" + obj[0] +
+            "' in position: " + obj.index +
+            " in the text: " + obj.input;
+    </script>
+</div>
 </body>
 </html>
