@@ -284,4 +284,11 @@ public class JSTutorialController {
 
         return "RegExp";
     }
+
+    @RequestMapping(value = "errors")
+    public String errors(Model model) {
+        model.addAttribute("title", "Errors");
+
+        return "errors";
+    }
 }
