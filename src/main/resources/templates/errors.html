@@ -122,5 +122,25 @@
     </script>
 </div>
 
+<div>
+    <h3>JavaScript Errors - Reference Error</h3>
+
+    <p>You cannot use the value of a non-existing variable:</p>
+    <p id="refErr"></p>
+
+    <script>
+        var x;
+
+        try {
+            x = y + 1;
+        }
+
+        catch(err) {
+            document.getElementById("refErr").innerHTML =
+                err.name;
+        }
+    </script>
+</div>
+
 </body>
 </html>
