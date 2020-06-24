@@ -31,6 +31,36 @@
     </script>
 </div>
 
+<div>
+    <h3>Throw exception</h3>
 
+    <p>Please input a number between 5 and 10:</p>
+
+    <input id="numberGen" type="text">
+    <button type="button" onclick="fiveToTen()">Test Input</button>
+    <p id="numberVeri"></p>
+
+    <script>
+        function fiveToTen() {
+            var message = document.getElementById("numberVeri");
+            var x = document.getElementById("numberGen").value;
+
+            message.innerHTML = "";
+
+            try {
+                if (x == "") throw "empty";
+                if (isNaN(x)) throw "not a number";
+
+                x = Number(x);
+                if (x < 5) throw "too low";
+                if (x > 10) throw "too high";
+            }
+
+            catch(err) {
+                message.innerHTML = "Input is " + err;
+            }
+        }
+    </script>
+</div>
 </body>
 </html>
