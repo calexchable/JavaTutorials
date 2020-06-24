@@ -100,5 +100,27 @@
 </script>
 </div>
 
+<div>
+    <h3>Java Script Errors - Range Error</h3>
+
+    <p>You cannot set a number of significant digits of a
+    number to 500:</p>
+
+    <p id="rangeError"></p>
+
+    <script>
+        var num = 1;
+
+        try {
+            num.toPrecision(500);
+        }
+
+        catch(err) {
+            document.getElementById("rangeError").innerHTML =
+                err.name;
+        }
+    </script>
+</div>
+
 </body>
 </html>
