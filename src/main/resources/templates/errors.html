@@ -179,5 +179,24 @@
     </script>
 </div>
 
+<div>
+    <h3>JavaScript Errors - URI (Uniform Resource Identifier)
+    Error</h3>
+
+    <p>Some characters cannot be decoded with decodeURI():</p>
+    <p id="uriDemo"></p>
+
+    <script>
+        try {
+            decodeURI("%%%%");
+        }
+
+        catch(err) {
+            document.getElementById("uriDemo").innerHTML =
+                err.name;
+        }
+    </script>
+</div>
+
 </body>
 </html>
