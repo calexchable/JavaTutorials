@@ -142,5 +142,23 @@
     </script>
 </div>
 
+<div>
+    <h3>JavaScript Errors - Syntax Error</h3>
+
+    <p>You cannot evaluate code that contains a syntax error:</p>
+    <p id="synErrDemo"></p>
+
+    <script>
+        try {
+            eval("alert('Hello)");
+        }
+
+        catch(err) {
+            document.getElementById("synErrDemo").innerHTML =
+                err.name;
+        }
+    </script>
+</div>
+
 </body>
 </html>
