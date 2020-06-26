@@ -51,5 +51,24 @@
     </script>
 </div>
 
+<div>
+    <h3>JavaScript Scope - Automatically Global</h3>
+
+    <p>If you assign a value to a variable that had not been
+    declared, it will automatically become a GLOBAL variable:</p>
+    <p id="carName4"></p>
+
+    <script>
+        myfunction2();
+
+        document.getElementById("carName4").innerHTML =
+            "I can display " + carName;
+
+        function myfunction2() {
+            carName = "Volvo";
+        }
+    </script>
+</div>
+
 </body>
 </html>
