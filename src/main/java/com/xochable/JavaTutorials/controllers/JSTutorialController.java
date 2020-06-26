@@ -291,4 +291,11 @@ public class JSTutorialController {
 
         return "errors";
     }
+
+    @RequestMapping(value = "scope")
+    public String scope(Model model) {
+        model.addAttribute("title", "Scope");
+
+        return "scope";
+    }
 }
