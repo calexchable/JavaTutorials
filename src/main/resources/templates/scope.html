@@ -11,6 +11,28 @@
 
 <h2>JavaScript Scope</h2>
 
+<div>
+    <h3>JavaScript Scope - Local Variable</h3>
+
+    <p>Outside of my function (carIdFunc()), the variable
+    carName is undefined.</p>
+    <p id="carName1"></p>
+    <p id="carName2"></p>
+
+    <script>
+        carIdFunc();
+
+        function carIdFunc() {
+            var carName = "Volvo";
+            document.getElementById("carName1").innerHTML =
+                typeof carName + " " + carName;
+        }
+
+        document.getElementById("carName2").innerHTML =
+            typeof carName;
+    </script>
+</div>
+
 
 </body>
 </html>
