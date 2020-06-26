@@ -70,5 +70,20 @@
     </script>
 </div>
 
+<div>
+    <h3>JavaScript Scope - HTML</h3>
+
+    <p>In HTML, global variable defined with <b>var</b>, will
+    become window variables.</p>
+    <p id="globalNames"></p>
+
+    <script>
+        var carName = "Volvo tank";
+
+        document.getElementById("globalNames").innerHTML =
+            "I display ... " + carName;
+    </script>
+</div>
+
 </body>
 </html>
