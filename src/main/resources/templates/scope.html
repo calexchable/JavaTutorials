@@ -33,6 +33,23 @@
     </script>
 </div>
 
+<div>
+    <h3>JavaScript Scope - Global Variable</h3>
+
+    <p>A GLOBAL variable can be accessed from any script or
+    function.</p>
+    <p id="carName3"></p>
+
+    <script>
+        var carName = "Volvo DL240";
+        myFunction();
+
+        function myFunction() {
+            document.getElementById("carName3").innerHTML =
+                "I can display " + carName;
+        }
+    </script>
+</div>
 
 </body>
 </html>
