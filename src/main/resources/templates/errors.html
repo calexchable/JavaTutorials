@@ -160,5 +160,24 @@
     </script>
 </div>
 
+<div>
+    <h3>JavaScript Errors - Type Error</h3>
+
+    <p>You cannot convert a number to upper case:</p>
+    <p id="typeErrDemo"></p>
+
+    <script>
+        var num = 1;
+        try {
+            num.toUpperCase();
+        }
+
+        catch(err) {
+            document.getElementById("typeErrDemo").innerHTML =
+                err.name;
+        }
+    </script>
+</div>
+
 </body>
 </html>
