@@ -298,4 +298,11 @@ public class JSTutorialController {
 
         return "scope";
     }
+
+    @RequestMapping(value = "hoisting")
+    public String hoisting(Model model) {
+        model.addAttribute("title", "Hoisting");
+
+        return "hoisting";
+    }
 }
