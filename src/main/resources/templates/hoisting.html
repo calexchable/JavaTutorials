@@ -37,6 +37,7 @@
     <h3>JavaScript Initializations are Not Hoisted</h3>
 
     <p id="hoistDemo3"></p>
+    <p id="hoistDemo4"></p>
 
     <script>
         var x1 = 5;
@@ -44,6 +45,13 @@
 
         elemX = document.getElementById("hoistDemo3");
         elemX.innerHTML = x1 + " " + x2;
+
+        var y1 = 5;
+
+        elemY = document.getElementById("hoistDemo4");
+        elemY.innerHTML = "x is " + y1 + " and y is " + y2;
+
+        var y2 = 7;
     </script>
 </div>
 
