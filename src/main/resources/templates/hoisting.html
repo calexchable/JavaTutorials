@@ -11,5 +11,20 @@
 
 <h2>JavaScript Hoisting</h2>
 
+<div>
+    <h3>JavaScript Declarations are Hoisted</h3>
+
+    <p id="hoistDemo1"></p>
+
+    <script>
+        x = 5;
+
+        elem = document.getElementById("hoistDemo1");
+        elem.innerHTML = x;
+
+        var x;
+    </script>
+</div>
+
 </body>
 </html>
