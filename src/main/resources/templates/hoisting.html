@@ -15,6 +15,7 @@
     <h3>JavaScript Declarations are Hoisted</h3>
 
     <p id="hoistDemo1"></p>
+    <p id="hoistDemo2"></p>
 
     <script>
         x = 5;
@@ -23,6 +24,12 @@
         elem.innerHTML = x;
 
         var x;
+
+        var y;
+        y = 5;
+
+        elemy = document.getElementById("hoistDemo2");
+        elemy.innerHTML = y;
     </script>
 </div>
 
