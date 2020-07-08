@@ -22,7 +22,24 @@
 
     <script>
         "use strict";
-        pi = 3.14;
+        piX = 3.14; // This will cause an error (y is not defined)
+    </script>
+</div>
+
+<div>
+    <h2>Global "use strict" declaration.</h2>
+
+    <p>Activate debugging in your browser (F12) to see the
+    error report.</p>
+
+    <script>
+        "use strict";
+        my strictFunction();
+
+        function strictFunction() {
+            piY = 3.14;
+            // This will cause an error (y is not defined)
+        }
     </script>
 </div>
 
