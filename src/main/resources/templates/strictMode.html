@@ -34,11 +34,30 @@
 
     <script>
         "use strict";
-        my strictFunction();
+        strictFunction();
 
         function strictFunction() {
             piY = 3.14;
             // This will cause an error (y is not defined)
+        }
+    </script>
+</div>
+
+<div>
+    <p>"use strict" in a function will only cause errors in
+    that function.</p>
+    <p>Activate debugging in your browser (F12) to see the
+    error report.</p>
+
+    <script>
+        piX2 = 3.14; // This will not cause an error.
+
+        strictFunctionX2();
+
+        function strictFunctionX2() {
+            "use strict";
+            piY2 = 3.14; // This will cause an error as piY2
+                is not defined).
         }
     </script>
 </div>
