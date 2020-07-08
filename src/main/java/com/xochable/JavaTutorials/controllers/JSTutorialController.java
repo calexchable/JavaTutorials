@@ -305,4 +305,11 @@ public class JSTutorialController {
 
         return "hoisting";
     }
+
+    @RequestMapping(value = "strictMode")
+    public String strictMode(Model model) {
+        model.addAttribute("title", "Strict Mode");
+
+        return "strictMode";
+    }
 }
