@@ -54,5 +54,18 @@
     </script>
 </div>
 
+<div>
+    <p>This example uses uses the "strict mode" - however,
+    it still refers to the window Object:</p>
+
+    <p id="winDemo"></p>
+
+    <script>
+        "use strict";
+        var x = this;
+        document.getElementById("winDemo").innerHTML = x;
+    </script>
+</div>
+
 </body>
 </html>
