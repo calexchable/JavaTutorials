@@ -12,7 +12,33 @@
 <h1>Java Script - this Keyword</h1>
 <p>from w3schools.com</p>
 
+<div>
+    <h3>The JavaScript <i>this</i> Keyword</h3>
 
+    <p>In this example, <b>this</b> represents the
+    <b>person</b> object.</p>
+
+    <p>Because the person object "owns" the fullName
+    method.</p>
+
+    <p id="fullNameDemo"></p>
+
+    <script>
+        var person = {
+            firstName: "John",
+            lastName: "Doe",
+            id: 5566,
+
+            fullName: function() {
+                return this.firstName + " " +
+                    this.lastName;
+            }
+        };
+
+        document.getElementById("fullNameDemo").innerHTML =
+            person.fullName();
+    </script>
+</div>
 
 </body>
 </html>
