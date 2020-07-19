@@ -67,5 +67,20 @@
     </script>
 </div>
 
+<div>
+    <h3>JavaScript THIS keyword</h3>
+
+    <p>In this example, <b>this</b> represents the
+    object that "owns" the function:</p>
+
+    <p id="funcOwns"></p>
+
+    <script>
+        document.getElementById("funcOwns").innerHTML =
+            myFunction();
+        function myFunction() {return this;}
+    </script>
+</div>
+
 </body>
 </html>
