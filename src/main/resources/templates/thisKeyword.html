@@ -75,10 +75,23 @@
 
     <p id="funcOwns"></p>
 
+    <p>In a function, by default, <b>this</b> refers to
+    the Global Object.</p>
+
+    <p>In strict mode, <b>this</b> is undefined, because
+    strict mode does not allow default binding:</p>
+
+    <p id="strictFunc"></p>
+
     <script>
         document.getElementById("funcOwns").innerHTML =
             myFunction();
         function myFunction() {return this;}
+
+        "use strict";
+        document.getElementById("strictFunc").innerHTML =
+            myStrictFunc();
+        function myStrictFunc() {return this;}
     </script>
 </div>
 
