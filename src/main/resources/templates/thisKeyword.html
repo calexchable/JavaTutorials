@@ -103,5 +103,27 @@
     </button>
 </div>
 
+<div>
+    <h3>Object Method Binding</h3>
+
+    <p>In this example, <i>this</i> represents
+    the person object that "owns" the function
+    method.</p>
+
+    <p id="bindDemo01"></p>
+
+    <script>
+        var person = {
+            firstName: "John",
+            lastName: "Doey",
+            id: 5566,
+            bindFunc: function() {return this;}
+        };
+
+        document.getElementById("bindDemo01").innerHTML =
+            person.bindFunc();
+    </script>
+</div>
+
 </body>
 </html>
