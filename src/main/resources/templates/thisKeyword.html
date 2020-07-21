@@ -112,16 +112,27 @@
 
     <p id="bindDemo01"></p>
 
+    <p>Here we use full Name method</p>
+
+    <p id="bindFullName"></p>
+
     <script>
         var person = {
             firstName: "John",
             lastName: "Doey",
             id: 5566,
-            bindFunc: function() {return this;}
+            bindFunc: function() {return this;},
+            fullNameBind: function() {
+                return this.firstName + " " +
+                    this.lastName;
+            }
         };
 
         document.getElementById("bindDemo01").innerHTML =
             person.bindFunc();
+
+        document.getElementById("bindFullName").innerHTML =
+            person.fullNameBind();
     </script>
 </div>
 
