@@ -136,5 +136,31 @@
     </script>
 </div>
 
+<div>
+    <h2>Explicit Function Binding</h2>
+
+    <p>In this example, <b>this</b> refers to
+    person2, even if it is a method of person1:</p>
+
+    <p id="exBind"></p>
+
+    <script>
+        var person1 = {
+            fullName: function() {
+                return this.firstName + " " + this.lastName;
+            }
+        }
+
+        var person2 = {
+            firstName: "Juana",
+            lastName: "Maria"
+        }
+
+        var x = person1.fullName.call(person2);
+
+        document.getElementById("exBind").innerHTML = x;
+    </script>
+</div>
+
 </body>
 </html>
