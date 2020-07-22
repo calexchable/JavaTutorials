@@ -319,4 +319,11 @@ public class JSTutorialController {
 
         return "thisKeyword";
     }
+
+    @RequestMapping(value = "let")
+    public String let(Model model) {
+        model.addAttribute("title", "let");
+
+        return "let";
+    }
 }
