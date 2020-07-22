@@ -12,5 +12,22 @@
 <h1>Java Script - Let</h1>
 <p>from w3schools.com</p>
 
+<h3>JavaScript Scope</h3>
+
+<p>A GLOBAL variable can be accessed from any script
+or function.</p>
+
+<p id="globalDemo"></p>
+
+<script>
+    var carName = "Volvo";
+    carFunction();
+
+    function carFunction() {
+        document.getElementById("globalDemo").innerHTML =
+            "I can display ... " + carName;
+    }
+</script>
+
 </body>
 </html>
