@@ -326,4 +326,11 @@ public class JSTutorialController {
 
         return "let";
     }
+
+    @RequestMapping(value = "const")
+    public String constant(Model model) {
+        model.addAttribute("title", "const");
+
+        return "const";
+    }
 }
