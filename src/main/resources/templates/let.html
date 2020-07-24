@@ -123,5 +123,22 @@ or function.</p>
     </script>
 </div>
 
+<div>
+    <p>Redeclaring a variable with <b>let</b>, in another
+    scope, or in another block, is allowed:</p>
+
+    <p id="redecDemo2"></p>
+
+    <script>
+        let b = 2;
+
+        {let b = 3;}
+
+        {let b = 4;}
+
+        document.getElementById("redecDemo2").innerHTML = b;
+    </script>
+</div>
+
 </body>
 </html>
