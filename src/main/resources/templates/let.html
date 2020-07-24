@@ -140,5 +140,20 @@ or function.</p>
     </script>
 </div>
 
+<div>
+    <h3>with Hoisting</h3>
+
+    <p>With <b>var</b>, you can use a variable before it is
+    declared:</p>
+
+    <p id="hoistDemo"></p>
+
+    <script>
+        carName = "Volvo";
+        document.getElementById("hoistDemo").innerHTML = carName;
+        var carName;
+    </script>
+</div>
+
 </body>
 </html>
