@@ -12,5 +12,24 @@
 <h1>Java Script - Let</h1>
 <p>from w3schools.com</p>
 
+<div>
+    <h3>JavaScript const</h3>
+
+    <p>You cannot change a primitive value.</p>
+
+    <p id="constDemo01"></p>
+
+    <script>
+        try {
+            const PI = 3.14159265;
+            PI = 3.14;
+        }
+
+        catch (err) {
+            document.getElementById("constDemo01").innerHTML = err;
+        }
+    </script>
+</div>
+
 </body>
 </html>
