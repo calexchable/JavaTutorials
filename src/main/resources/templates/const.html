@@ -77,6 +77,10 @@ to a value.</p>
 
     <p id="constDemo04"></p>
 
+    <p>Note that you cannot reassign a constant object:</p>
+
+    <p id="constDemo05"></p>
+
     <script>
         const car = {
             type:"Fiat",
@@ -89,6 +93,14 @@ to a value.</p>
 
         document.getElementById("constDemo04").innerHTML =
             "Car Owner is " + car.owner;
+
+        try {
+            car = {type: "Volvo", model: "EX60", color: "red"};
+        }
+        catch (error) {
+            document.getElementById("constDemo05").innerHTML =
+                error;
+        }
     </script>
 </div>
 
