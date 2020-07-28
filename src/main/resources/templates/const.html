@@ -112,6 +112,10 @@ to a value.</p>
 
     <p id="constDemo06"></p>
 
+    <p>However, you cannot reassign a constant array:</p>
+
+    <p id="constDemo07"></p>
+
     <script>
         const cars = ["Saab", "Volvo", "BMW"];
 
@@ -120,6 +124,14 @@ to a value.</p>
 
         document.getElementById("constDemo06").innerHTML =
             cars;
+
+        try {
+            cars = ["Toyotaa", "Volvoo", "Audii"];
+        }
+        catch (err) {
+            document.getElementById("constDemo07").innerHTML =
+                err;
+        }
     </script>
 </div>
 
