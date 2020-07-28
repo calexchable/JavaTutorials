@@ -104,5 +104,24 @@ to a value.</p>
     </script>
 </div>
 
+<div>
+    <h3>Constant Arrays can Change</h3>
+
+    <p>Declaring a constant array does NOT make the elements
+    unchangeable:</p>
+
+    <p id="constDemo06"></p>
+
+    <script>
+        const cars = ["Saab", "Volvo", "BMW"];
+
+        cars[0] = "Toyota";
+        cars.push("Audi");
+
+        document.getElementById("constDemo06").innerHTML =
+            cars;
+    </script>
+</div>
+
 </body>
 </html>
