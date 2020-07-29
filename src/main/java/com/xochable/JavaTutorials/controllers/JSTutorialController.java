@@ -333,4 +333,11 @@ public class JSTutorialController {
 
         return "const";
     }
+
+    @RequestMapping(value = "arrowFunc")
+    public String arrowFunction(Model model) {
+        model.addAttribute("title", "Arrow Functions");
+
+        return "arrowFunc";
+    }
 }
