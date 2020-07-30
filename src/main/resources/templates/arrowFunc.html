@@ -107,5 +107,33 @@
     </script>
 </div>
 
+<div>
+    <p>This example demonstrates that in a regular
+    function, the "this" keyword represents different
+        objects depending on how the function was
+    called.</p>
+
+    <p>Click the button to execute the "hello"
+    function again, and you will see that this time
+    "this" represents teh button object.</p>
+
+    <button id="btn">Click it!</button>
+
+    <p id="funcDemo"></p>
+
+    <script>
+        var hello;
+
+        hello = function() {
+            document.getElementById("funcDemo").innerHTML += this;
+        }
+
+        window.addEventListener("load", hello);
+
+        document.getElementById("btn").addEventListener("click", hello);
+
+    </script>
+</div>
+
 </body>
 </html>
