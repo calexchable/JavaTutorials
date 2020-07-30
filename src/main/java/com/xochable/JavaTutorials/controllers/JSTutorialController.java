@@ -340,4 +340,11 @@ public class JSTutorialController {
 
         return "arrowFunc";
     }
+
+    @RequestMapping(value = "debugging")
+    public String debugging(Model model) {
+        model.addAttribute("title", "Debugging");
+
+        return "debugging";
+    }
 }
