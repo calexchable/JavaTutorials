@@ -60,6 +60,7 @@
 
     <p id="arrowDemo02"></p>
 
+    <p>*Note: this only works on function with one statement</p>
     <script>
         var hello;
         hello = () => "HelloWorld!!!";
@@ -68,5 +69,24 @@
             hello();
     </script>
 </div>
+
+<div>
+    <h3>JavaScript Passing Parameters</h3>
+
+    <p>This example shows an Arrow Function with a
+    parameter.</p>
+
+    <p id="arrowDemo03"></p>
+
+    <script>
+        var hello;
+
+        hello = (val) => "Hello" + val;
+
+        document.getElementById("arrowDemo03").innerHTML =
+            hello("Universe!");
+    </script>
+</div>
+
 </body>
 </html>
