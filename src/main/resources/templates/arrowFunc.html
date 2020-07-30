@@ -88,5 +88,24 @@
     </script>
 </div>
 
+<div>
+    <h3>JavaScript without parenthesis</h3>
+
+    <p>This example shows that if you have only one
+    parameter in an Arrow Function, you can skip the
+    parenthesis.</p>
+
+    <p id="arrowDemo04"></p>
+
+    <script>
+        var hello;
+
+        hello = val => "Hello " + val;
+
+        document.getElementById("arrowDemo04").innerHTML =
+            hello("Universe!!!");
+    </script>
+</div>
+
 </body>
 </html>
