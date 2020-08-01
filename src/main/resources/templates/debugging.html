@@ -29,5 +29,21 @@
     </script>
 </div>
 
+<div>
+    <h3>Debugger keyword</h3>
+
+    <p id="debuggerDemo"></p>
+
+    <p>With the debugger turned on, the code below
+    should stop executing before it executes the
+    third line.</p>
+
+    <script>
+        var x = 15 * 5;
+        debugger;
+        document.getElementById("debuggerDemo").innerHTML = x;
+    </script>
+</div>
+
 </body>
 </html>
