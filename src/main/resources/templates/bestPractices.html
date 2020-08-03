@@ -55,12 +55,18 @@ produces nasty side effects.</p>
 
 <p id="bestPracDemo01"></p>
 
+<p id="bestPracDemo02"></p>
+
 <script>
     var x = "John";
     var y = new String("John");
+    var z = new String("John");
 
     document.getElementById("bestPracDemo01").innerHTML =
         x === y;
+
+    document.getElementById("bestPracDemo02").innerHTML =
+        y == z;
 </script>
 
 </body>
