@@ -48,7 +48,20 @@ primitive values. Not as objects. Declaring these
 types as objects, slows down execution speed, and
 produces nasty side effects.</p>
 
-<p>example:</p>
+<p>Example:</p>
+
+<p>Never create strings as objects.</p>
+<p>Strings and objects cannot safely be compared.</p>
+
+<p id="bestPracDemo01"></p>
+
+<script>
+    var x = "John";
+    var y = new String("John");
+
+    document.getElementById("bestPracDemo01").innerHTML =
+        x === y;
+</script>
 
 </body>
 </html>
