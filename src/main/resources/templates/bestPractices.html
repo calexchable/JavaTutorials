@@ -104,5 +104,23 @@ produces nasty side effects.</p>
     </script>
 </div>
 
+<div>
+    <h3>Beware Automatic Type Conversions</h3>
+    <p>Numbers can accidentally be converted to
+    strings of NaN (Not a Number). Variables can
+    also contain different data types, and a variable
+    can change its data type.</p>
+
+    <p id="bestPracDemo05"></p>
+
+    <script>
+        var x = "Hello";
+        var x = 5;
+
+        document.getElementById("bestPracDemo05").innerHTML =
+            typeof x;
+    </script>
+</div>
+
 </body>
 </html>
