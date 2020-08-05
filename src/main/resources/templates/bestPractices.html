@@ -181,5 +181,41 @@ produces nasty side effects.</p>
     </script>
 </div>
 
+<div>
+    <h3>Use Parameter Defaults</h3>
+
+    <p>If a function is called with a missing
+    argument, the value of the missing argument
+    is set to undefined (which can break your
+    code).</p>
+
+    <p>It is a good habit to assign default
+    values to arguments.</p>
+
+    <p>Setting a default value to a function
+    parameter.</p>
+
+    <p id="bestPracDemo09"></p>
+    <p id="bestPracDemo10"></p>
+    <p id="bestPracDemo11"></p>
+
+    <script>
+        function myFunction(x, y) {
+            if (y === undefined) {
+                y = 0;
+            }
+            return x * y;
+        }
+
+        document.getElementById("bestPracDemo09").innerHTML =
+            myFunction(4);
+        document.getElementById("bestPracDemo10").innerHTML =
+            myFunction(4, 1);
+        document.getElementById("bestPracDemo11").innerHTML =
+            myFunction(4, 2);
+
+    </script>
+</div>
+
 </body>
 </html>
