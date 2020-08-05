@@ -130,6 +130,10 @@ produces nasty side effects.</p>
 
     <p id="bestPracDemo06"></p>
 
+    <p>Subtracting a string from a string will
+    produce a NaN (Not a Number).</p>
+
+    <p id="bestPracDemo07"></p>
     <script>
         var x = 5;
             //x = 5 + 7;
@@ -142,6 +146,8 @@ produces nasty side effects.</p>
 
         document.getElementById("bestPracDemo06").innerHTML =
             x.valueOf() + " " + typeof x;
+        document.getElementById("bestPracDemo07").innerHTML =
+            "hello" - "Dolly";
     </script>
 
 </div>
