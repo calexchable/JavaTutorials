@@ -122,5 +122,30 @@ produces nasty side effects.</p>
     </script>
 </div>
 
+<div>
+    <p>... math ...</p>
+
+    <p>Remove the comment markers in the script
+    to test each case:</p>
+
+    <p id="bestPracDemo06"></p>
+
+    <script>
+        var x = 5;
+            //x = 5 + 7;
+            //x = 5 + "7";
+            //x = "5" + 7;
+            //x = 5 - 7;
+            //x = 5 - "7";
+            //x = "5" - 7;
+            //x = 5 - "x";
+
+        document.getElementById("bestPracDemo06").innerHTML =
+            x.valueOf() + " " + typeof x;
+    </script>
+
+</div>
+
+
 </body>
 </html>
