@@ -354,4 +354,11 @@ public class JSTutorialController {
 
         return "bestPractices";
     }
+
+    @RequestMapping(value = "mistakes")
+    public String mistakes(Model model) {
+        model.addAttribute("title", "Mistakes");
+
+        return "mistakes";
+    }
 }
