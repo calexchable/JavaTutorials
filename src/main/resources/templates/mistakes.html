@@ -63,8 +63,6 @@
     use strict comparison:</p>
     <p>This case switch will display an alert:</p>
 
-    <p id="mistakeDemo06"></p>
-
     <script>
         var x = 10;
         var y = "10";
@@ -81,6 +79,33 @@
             Boolean(x == y);
         document.getElementById("mistakeDemo05").innerHTML =
             Boolean(x === y);
+    </script>
+</div>
+
+<div>
+    <h3>Confusing Addition & Concatenation</h3>
+
+    <p><strong>Addition</strong> is about adding
+        <strong>numbers</strong></p>
+    <p><strong>Concatenation</strong> is about adding
+        <strong>strings</strong></p>
+
+    <p>In JavaScript both operations use the same + operator.</p>
+
+    <p>Because of this, adding a number as a number will produce
+    a different result from adding a number as a string:</p>
+
+    <p id="mistakeDemo06"></p>
+    <p id="mistakeDemo07"></p>
+
+    <script>
+        var x = 10 + 5;
+        var y = 10 + "5";
+
+        document.getElementById("mistakeDemo06").innerHTML =
+            "10 + 5 = " + x;
+        document.getElementById("mistakeDemo07").innerHTML =
+            "10 + '5' = " + y;
     </script>
 </div>
 
