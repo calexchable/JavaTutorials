@@ -59,9 +59,19 @@
 
     <p id="mistakeDemo05"></p>
 
+    <p>It is a common mistake to forget that switch statements
+    use strict comparison:</p>
+    <p>This case switch will display an alert:</p>
+
+    <p id="mistakeDemo06"></p>
+
     <script>
         var x = 10;
         var y = "10";
+
+        switch(x) {
+            case 10: alert("Hola");
+        }
 
         document.getElementById("mistakeDemo04").innerHTML =
             Boolean(x == y);
