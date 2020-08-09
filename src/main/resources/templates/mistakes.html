@@ -12,5 +12,24 @@
 <h1>Java Script - Mistakes</h1>
 <p>from w3schools.com</p>
 
+<div>
+    <h3>Accidentally Using the Assignment Operator</h3>
+
+    <p>JavaScript programs may generate unexpected results if a
+    programmer accidentally uses an assignment operator (=), instead
+    of a comparison operator (==) in an if statement.</p>
+
+    <p>This if statement returns false (as expected) because x
+    is not equal to 10:</p>
+
+    <p id="mistakeDemo01"></p>
+
+    <script>
+        var x = 0;
+        document.getElementById("mistakeDemo01").innerHTML =
+            Boolean(x == 10);
+    </script>
+</div>
+
 </body>
 </html>
