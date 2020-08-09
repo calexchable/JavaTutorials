@@ -29,6 +29,11 @@
 
     <p id="mistakeDemo02"></p>
 
+    <p>This if statement returns false (maybe not as expected),
+    because 0 is false:</p>
+
+    <p id="mistakeDemo03"></p>
+
     <script>
         var x = 0;
 
@@ -36,6 +41,8 @@
             Boolean(x == 10);
         document.getElementById("mistakeDemo02").innerHTML =
             Boolean(x = 10);
+        document.getElementById("mistakeDemo03").innerHTML =
+            Boolean(x = 0);
     </script>
 </div>
 
