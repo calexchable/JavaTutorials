@@ -26,10 +26,24 @@
 
     <script>
         var x = 0;
+
         document.getElementById("mistakeDemo01").innerHTML =
             Boolean(x == 10);
+
     </script>
 </div>
 
+<div>
+    <p>This if statement returns true (maybe not as expected), because
+        10 is true:</p>
+
+    <p id="mistakeDemo02>"></p>
+
+    <script>
+        var y = 0;
+        document.getElementById("mistakeDemo02").innerHTML =
+            Boolean(y = 10);
+    </script>
+</div>
 </body>
 </html>
