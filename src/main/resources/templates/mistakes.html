@@ -54,12 +54,19 @@
 
     <p id="mistakeDemo04"></p>
 
+    <p>In a strict comparison, data type does matter. This if
+    statement returns false:</p>
+
+    <p id="mistakeDemo05"></p>
+
     <script>
         var x = 10;
         var y = "10";
 
         document.getElementById("mistakeDemo04").innerHTML =
             Boolean(x == y);
+        document.getElementById("mistakeDemo05").innerHTML =
+            Boolean(x === y);
     </script>
 </div>
 
