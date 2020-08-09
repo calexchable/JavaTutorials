@@ -46,5 +46,22 @@
     </script>
 </div>
 
+<div>
+    <h3>Expecting Loose Comparison</h3>
+
+    <p>In regular comparison, data types do not matter. This if
+    statement returns true:</p>
+
+    <p id="mistakeDemo04"></p>
+
+    <script>
+        var x = 10;
+        var y = "10";
+
+        document.getElementById("mistakeDemo04").innerHTML =
+            Boolean(x == y);
+    </script>
+</div>
+
 </body>
 </html>
