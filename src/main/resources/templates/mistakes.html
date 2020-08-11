@@ -124,5 +124,25 @@
     </script>
 </div>
 
+<div>
+    <h3>Misunderstanding Floats</h3>
+
+    <p>All numbers in JavaScript are stored as 64-bit
+    <strong>Floating point numbers</strong>, or Floats.</p>
+
+    <p>All programming languages, including JavaScript,
+    have difficulties with precise floating point values:</p>
+
+    <p id="mistakeDemo09"></p>
+
+    <script>
+        var x = 0.1;
+        var y = 0.2;
+        var z = x + y;
+
+        document.getElementById("mistakeDemo09").innerHTML = z;
+    </script>
+</div>
+
 </body>
 </html>
