@@ -174,5 +174,22 @@
     </script>
 </div>
 
+<div>
+    <h3>Misplacing SemiColon</h3>
+
+    <p>In the code example, the misplaced semicolon (after the
+    if statement) will cause the code block to execute:</p>
+    <p id="mistakeDemo14"></p>
+    
+    <script>
+        var x = 5;
+        if (x == 12);
+            {
+                document.getElementById("mistakeDemo14").innerHTML =
+                    "Hello Matey";
+            }
+    </script>
+</div>
+
 </body>
 </html>
