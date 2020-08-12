@@ -180,7 +180,7 @@
     <p>In the code example, the misplaced semicolon (after the
     if statement) will cause the code block to execute:</p>
     <p id="mistakeDemo14"></p>
-    
+
     <script>
         var x = 5;
         if (x == 12);
@@ -191,5 +191,26 @@
     </script>
 </div>
 
+<div>
+    <h3>Breaking a Return Statement</h3>
+
+    <p>It is a default JavaScript behavior to close a statement
+    automatically at the end of a line.</p>
+
+    <p>Because of this, these two code examples return the same
+    result:</p>
+
+    <p id="powerDemo01"></p>
+
+    <script>
+        document.getElementById("powerDemo01").innerHTML =
+            myFunction01(55);
+        function myFunction01(a) {
+            var power = 10
+            return a * power
+        }
+
+    </script>
+</div>
 </body>
 </html>
