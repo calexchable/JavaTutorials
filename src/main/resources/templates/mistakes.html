@@ -201,6 +201,7 @@
     result:</p>
 
     <p id="powerDemo01"></p>
+    <p id="powerDemo02"></p>
 
     <script>
         document.getElementById("powerDemo01").innerHTML =
@@ -210,6 +211,12 @@
             return a * power
         }
 
+        document.getElementById("powerDemo02").innerHTML =
+            myFunction02(55);
+        function myFunction02(a) {
+            var power = 10;
+            return a * 10;
+        }
     </script>
 </div>
 </body>
