@@ -203,6 +203,12 @@
     <p id="powerDemo01"></p>
     <p id="powerDemo02"></p>
 
+    <p>JavaScript will also allow you to break a statement
+    into two lines. Because of this, example 3 yields the
+    same result:</p>
+
+    <p id="powerDemo03"></p>
+
     <script>
         document.getElementById("powerDemo01").innerHTML =
             myFunction01(55);
@@ -216,6 +222,14 @@
         function myFunction02(a) {
             var power = 10;
             return a * 10;
+        }
+
+        document.getElementById("powerDemo03").innerHTML =
+            myFunction03(55);
+        function myFunction03(a) {
+            var
+            power = 10;
+            return a * power;
         }
     </script>
 </div>
