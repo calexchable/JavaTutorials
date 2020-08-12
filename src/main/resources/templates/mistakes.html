@@ -209,6 +209,11 @@
 
     <p id="powerDemo03"></p>
 
+    <p>But if you break the return statement into two lines,
+    the function will return "undefined".</p>
+
+    <p id="powerDemo04"></p>
+
     <script>
         document.getElementById("powerDemo01").innerHTML =
             myFunction01(55);
@@ -230,6 +235,15 @@
             var
             power = 10;
             return a * power;
+        }
+
+        document.getElementById("powerDemo04").innerHTML =
+            myFunction04(55);
+        function myFunction04(a) {
+            var
+            power = 10;
+            return
+            a * power;
         }
     </script>
 </div>
