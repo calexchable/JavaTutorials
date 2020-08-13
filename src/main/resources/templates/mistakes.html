@@ -338,9 +338,16 @@
 
     <p>Correct:</p>
 
+    <p>If you want to test if an object is not null, you must
+    test if it not undefined first.</p>
+
+    <p id="notNullDemo02"></p>
+
     <script>
         document.getElementById("notNullDemo").innerHTML =
             typeof myObj === "undefined";
+        document.getElementById("notNullDemo02").innerHTML =
+            typeof myObj !== "undefined" && myObj !== null;
     </script>
 </div>
 
