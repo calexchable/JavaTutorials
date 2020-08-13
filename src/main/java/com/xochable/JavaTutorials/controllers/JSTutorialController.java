@@ -361,4 +361,11 @@ public class JSTutorialController {
 
         return "mistakes";
     }
+
+    @RequestMapping(value = "performance")
+    public String performance(Model model) {
+        model.addAttribute("title", "Performance");
+
+        return "performance";
+    }
 }
