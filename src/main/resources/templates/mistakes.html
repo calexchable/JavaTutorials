@@ -258,6 +258,25 @@
 
 <div>
     <h3>Accessing Arrays with Names Indexes</h3>
+
+    <p>Many programming languages support arrays with named
+    indexes. Arrays with named indexes are called associative
+    arrays (or hashes).</p>
+
+    <p>JavaScript does not support arrays with named indexes.
+    In JavaScript, arrays use numbered indexes:</p>
+
+    <p id="arrayDemo01"></p>
+
+    <script>
+        var person = [];
+        person[0] = "Juan";
+        person[1] = "Savino";
+        person[2] = 82;
+
+        document.getElementById("arrayDemo01").innerHTML =
+            person[0] + " " + person.length;
+    </script>
 </div>
 
 </body>
