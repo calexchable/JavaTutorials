@@ -321,7 +321,23 @@
 
     <p id="notNullDemo"></p>
 
-    <p>But you cannot </p>
+    <p>But you cannot test if an object is null, because this
+    will throw an error if the object is undefined:</p>
+
+    <p>Incorrect: "if (myObj === null)"</p>
+
+    <p>To solve this problem, you must test if an object is
+    not null, and not undefined. But this can still throw an
+    error:</p>
+
+    <p>Incorrect: "if (myObj !== null && typeof myObj !==
+    "undefined""</p>
+
+    <p>Because of this, you must test for not undefined before
+    you can test for not null:</p>
+
+    <p>Correct:</p>
+
     <script>
         document.getElementById("notNullDemo").innerHTML =
             typeof myObj === "undefined";
