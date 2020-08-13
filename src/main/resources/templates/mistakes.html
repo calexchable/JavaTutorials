@@ -268,14 +268,30 @@
 
     <p id="arrayDemo01"></p>
 
+    <p>In JavaScript, Objects use named indexes.</p>
+    <p>If you use a named index, when accessing an array,
+    JavaScript will redefine the array to a standard object.
+    After the automatic redefinition, array methods and
+    properties will produce undefined or incorrect results:</p>
+
+    <p id="arrayDemo02"></p>
+
     <script>
         var person = [];
         person[0] = "Juan";
         person[1] = "Savino";
         person[2] = 82;
 
+        var persona = [];
+        persona["firstName"] = "Jose";
+        persona["lastName"] = "Salgari";
+        persona["age"] = 46;
+
         document.getElementById("arrayDemo01").innerHTML =
             person[0] + " " + person.length;
+
+        document.getElementById("arrayDemo02").innerHTML =
+            persona[0] + " " + persona.length;
     </script>
 </div>
 
