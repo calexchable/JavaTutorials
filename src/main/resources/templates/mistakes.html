@@ -305,6 +305,27 @@
 
 <div>
     <h3>Undefined is Not Null</h3>
+
+    <p>JavaScript objects, variables, properties, and methods
+    can be undefined.</p>
+
+    <p>In addition, empty JavaScript objects can have the value
+    null.</p>
+
+    <p>This can make it a little bit difficult to test if an
+    object is empty. You can test if an object exists by
+    testing if the type is undefined:</p>
+
+    <p><strong>example:</strong> To test if an object does not
+    exist, test if the type is undefined:</p>
+
+    <p id="notNullDemo"></p>
+
+    <p>But you cannot </p>
+    <script>
+        document.getElementById("notNullDemo").innerHTML =
+            typeof myObj === "undefined";
+    </script>
 </div>
 
 </body>
