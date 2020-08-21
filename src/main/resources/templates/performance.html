@@ -12,5 +12,31 @@
 <h1>Java Script - Performance</h1>
 <p>from w3schools.com</p>
 
+<div>
+    <h3>
+        Reduce Activity in Loops
+    </h3>
+
+    <p>Loops are often used in programming. Each statement
+    in a loop, including the for statement, is executed for
+    each iteration of the loop.  Statements or assignments
+    that can be placed outside of the loop will make the
+    loop run faster.</p>
+
+    <h4>Bad Code:</h4>
+    <p>var i;</p>
+    <p>for (i = 0; i < arr.length; i++) {</p>
+
+    <h4>Better Code:</h4>
+    <p>var i;</p>
+    <p>var l = arr.length;</p>
+    <p>for (i = 0; i < l; i++) {</p>
+
+    <p>The Bad code accesses the length property of an array
+    each time the loop is iterated. The better code accesses
+    the property outside the loop and makes the loop run
+    faster.</p>
+</div>
+
 </body>
 </html>
