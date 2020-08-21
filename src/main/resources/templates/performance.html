@@ -60,5 +60,21 @@
     </script>
 </div>
 
+<div>
+    <h3>Avoid Unnecessary Variables</h3>
+
+    <p>Don't create new variables if you don't plan to save
+        values. Often you can replace code</p>
+    <p><strong>like this:</strong></p>
+
+    <p>var fullName = firstName + " " + lastName;</p>
+    <p>document.getElementById("demo").innerHTML = fullName;</p>
+
+    <p><strong>with this:</strong></p>
+
+    <p>document.getElementById("demo").innerHTML =
+    first Name + " " + lastName;</p>
+</div>
+
 </body>
 </html>
