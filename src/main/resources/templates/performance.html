@@ -47,12 +47,17 @@
 
     <p id="performDemo01"></p>
 
+    <p>Keep the number of elements in the HTML DOM small.  This
+    will always improve page loading, and speed up rendering (page
+    display), especially on smaller devices.  Every attempt to
+    search the DOM (like getElementsByTagName) will benefit from
+    a smaller DOM.</p>
+
     <script>
         var obj;
         obj = document.getElementById("performDemo01");
         obj.innerHTML = " HELLO ";
     </script>
-
 </div>
 
 </body>
