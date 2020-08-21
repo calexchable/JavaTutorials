@@ -38,5 +38,22 @@
     faster.</p>
 </div>
 
+<div>
+    <h3>Reduce DOM Access</h3>
+
+    <p>Accessing the HTML DOM is very slow, compared to other
+    JavaScript statements.  If you expect to access a DOM element
+    several times, access it once, and use it as a local variable:</p>
+
+    <p id="performDemo01"></p>
+
+    <script>
+        var obj;
+        obj = document.getElementById("performDemo01");
+        obj.innerHTML = " HELLO ";
+    </script>
+
+</div>
+
 </body>
 </html>
