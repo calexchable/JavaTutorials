@@ -368,4 +368,11 @@ public class JSTutorialController {
 
         return "performance";
     }
+
+    @RequestMapping(value = "jsJSON")
+    public String jsJSON(Model model) {
+        model.addAttribute("title", "JS JSON");
+
+        return "jsJSON";
+    }
 }
